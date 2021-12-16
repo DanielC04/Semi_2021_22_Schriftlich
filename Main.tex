@@ -16,8 +16,10 @@
 \usepackage{float}
 \usepackage{pgfplots}
 \usepackage{tikz}
-%\usepackage{caption}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage{float}
+\usepackage{array}
 \usepackage{newclude}
 \DeclareUnicodeCharacter{00B0}{~}
 
@@ -30,6 +32,15 @@
 \newcommand{\bibRef}[1]{\hyperlink{#1}{$^{[\ref*{#1}{}]}$}}
 
 \newcommand{\productName}{VARROAZERSTÖRER 3000}
+
+\newcommand{\subpicture}[2]{
+    \begin{subfigure}{.3\textwidth}
+        \centering
+        \includegraphics[width=.7\textwidth]{#1}
+        \caption{#2}
+    \end{subfigure}
+}
+
 \begin{document}
 \sloppy 			% damit keine langen Wörter über den rechten Rand stehen
 
@@ -127,10 +138,26 @@ Eine weitere, besonders schwierige Frage, die sich uns stellte, war, ob wir nebe
 Um Varroamilben möglichst zuverlässig auf Bienen zu erkennen, muss der Kontrast zwischen Milbe und Biene so ausgeprägt wie möglich sein. Durch Durchführung systematischer Experimente haben wir die Rahmenbedingungen für ein solches Optimum so präzise wie möglich festgestellt.\\
 Bei allen durchgeführten Versuchen fotografierten wir tote Bienen, auf deren Rücken oder Panzer eine Varroamilben saß. Dabei haben wir von außen kommendes Licht fast vollständig abgeschirmt, um zufällige Fehler durch Sonnenlicht oder andere Beleuchtungen zu vermeiden. Somit hatten wir die Möglichkeit alle Bedingungen eines Fotos nahezu konstant zu halten und nur einen Einfluss gezielt zu verändern.\\
 Bei unseren Untersuchten beschränkten wir uns speziell auf die optimale Helligkeit und Wellenlänge der Belichtung, sowie die beste Beschaffenheit und Farbe des Untergrunds.\\
-Die Ergebnisse unserer Versuche bezüglich der optimalen Wellenlänge der Beleuchtung waren eindeutig. Die Milben sind bei Licht mit einer besonders hohen Wellenlänge am besten zu erkennen (siehe Anhang S. ???). Die Wellenlänge sollte zwischen 900 nm und 950 nm liegen. das entspricht kurzwelligem Infrarotlicht\footnote{\url{https://www.heizstrahler-direkt.de/blog/ir-heizstrahler-die-drei-verschiedenen-strahlungstypen/}}.\\
-Höher sollte die Wellenlänge der Beleuchtung nicht sein. Denn gängige Fotosensoren, Objektive und Linsen sind für sichtbares Licht optimiert. Außerhalb eines Toleranzbereiches bräuchten wir spezielle, teure Optik.\\
+\begin{figure}[H] \label{fig:experiment}
+        % meine fancy Funktion :)
+	\centering
+        \subpicture{images/575nm.jpg}{575nm}
+        \subpicture{images/595nm.jpg}{595nm}
+        \subpicture{images/660nm.jpg}{660nm}
+        \subpicture{images/700nm.jpg}{700nm}
+        \subpicture{images/770nm.jpg}{770nm}
+        \subpicture{images/850nm.jpg}{850nm}
+        \subpicture{images/870nm.jpg}{870nm}
+        \subpicture{images/925nm.jpg}{925nm}
+        \subpicture{images/940nm.jpg}{940nm}
+	% \caption{Testbilder bei verschiedenen Wellenlängen}
+\end{figure}
+\noindent
+Die Ergebnisse unserer Versuche bezüglich der optimalen Wellenlänge der Beleuchtung waren eindeutig. Die Milben sind bei Licht mit einer besonders hohen Wellenlänge am besten zu erkennen (siehe Abbildung ???). Bei grünem, orangenem und hellrotem Licht ist der Parasit nur umrissartig oder sogar gar nicht zu erkennen. Im starken Gegensatz dazu hebt sich die Milbe bei dunkelrotem und infrarotem Licht stark als weißer Fleck auf der Biene ab.\\
+Die Wellenlänge sollte also zwischen 900 nm und 950 nm liegen, was kurzwelligem Infrarotlicht entspricht\footnote{\url{https://www.heizstrahler-direkt.de/blog/ir-heizstrahler-die-drei-verschiedenen-strahlungstypen/}}. Höher darf die Wellenlänge der Beleuchtung nicht sein. Denn gängige Fotosensoren, Objektive und Linsen sind für sichtbares Licht optimiert. Außerhalb eines Toleranzbereiches bräuchten wir für scharfe Bilder spezielle, teure Optik.\\
 Infrarotes Licht wird zudem von Bienen nicht gesehen. Bienen nehmen nämlich Licht nur bis zu einer Wellenlänge von etwa 650nm wahr\footnote{\url{https://honeybeehq.com/how-do-bees-see-the-world-this-is-their-superpower/}}. Im Anhang auf S. ??? ist das für Bienen sichtbare Spektrum zu sehen. Eine Beleuchtung mit Infrarotem Licht können wir also benutzen, ohne die Bienen einzuschränken.\\
-Bei den Experimenten zum Untergrund ergab sich, dass jegliche Reflexionen und Streuungen des Lichts den Kontrast zwischen Milbe und Biene verschlechtert. Der beste Untergrund sollte somit schwarz sein und möglichst wenig reflektieren.
+Bei den Experimenten zum Untergrund ergab sich, dass Reflexionen und Streuungen des Lichts den Kontrast zwischen Milbe und Biene verschlechtern. Der beste Untergrund sollte somit schwarz sein und möglichst wenig reflektieren.
+% nicht so aprupt abbrechen
 
 
 % ---------------------------------------
@@ -139,59 +166,67 @@ Bei den Experimenten zum Untergrund ergab sich, dass jegliche Reflexionen und St
 \newpage
 \section{Entwicklung und Verbesserung verschiedener Prototypen}
 \subsection{Angewandte Arbeitsmethoden}
-Die wohl wichtigste von uns angewandte Arbeitsmethode ist das Prototyping. Prototyping ist ein Verfahren zum Austesten von angestrebten Ergebnissen mittels aufwandsarmer, günstiger Testversionen\footnote{https://www.businessinsider.de/gruenderszene/lexikon/begriffe/prototyping/}. Es wird sich schrittweise, durch ständige Ausbesserung von Fehlern oder Lücken, einer möglichst optimalen Lösung angenähert. Unwichtige Details und ablenkende, kleinere Probleme können bei diesem Prozess vorerst ignoriert werden. Der Fokus auf die wesentlichen Herausforderung kann somit erhalten bleiben.\\
-Dieses Verfahren ist in unserem Projekt besonders nützlich, da bei der Arbeit mit Bienen viele Fehlerquellen sehr schwer vorhersehbar sind. Wir wussten zu Beginn unserer Arbeiten nicht, wie genau ein mögliches Endprodukt aussehen könnte. Durch das Herstellen von Prototypen konnten wir auch alle unsere Lösungsansätze wenigstens grundätzlich testen. So konnten wir sehr viele vage Ideen testen und immer weiter konkretisieren.\\
-Für diese Arbeitsweise war das Arbeiten mit den uns zur Verfügung stehenden 3D-Druckern sehr wichtig. Die Kombination aus Druckern und einem CAD-Programm ermöglicht sehr schnelle Umsetzung von Ideen. CAD kommt aus dem Englischen und steht für ,,Computer-Aided Design''. 
-\begin{itemize}
-    \item Rapid Prototyping
-    \item -> CAD-Programm: Fusion 360; um Maße richtig zu treffen: mehrere Versuche
-    \item Prototypen schnell und leicht an Bienen anbringbar -> schnelles Feedback
-    \item Schreiben der Software und Machen von Fotos bzw. Starten von Videos remote möglich -> Linux command line Wissen
-	\item Prototypen
-	\item 3D-Drucken und Designen
-	\item schnell an Bienen anbringen
-	\item Linux-command-line Wissen genutzt
-\end{itemize}
+Die wohl wichtigste von uns angewandte Arbeitsmethode ist das Rapid-Prototyping. Prototyping ist ein Verfahren zum Annähern an angestrebte Ergebnisse mittels aufwandsarmer, günstiger Testversionen\footnote{https://www.businessinsider.de/gruenderszene/lexikon/begriffe/prototyping/}. Wir kamen durch den Bau unserer Prototypen und durch das ständige Ausbessern von Fehlern unserem Ziel, einer immer funktionalen Milbenerkennung, immer näher. Unwichtige Details und ablenkende, kleinere Probleme können bei diesem Prozess vorerst ignoriert werden. Der Fokus auf die wesentlichen Herausforderung kann somit bei der Entwicklung erhalten bleiben. Wir haben beispielsweise Witterungsbeständigkeit erst bei späteren Versionen und Kostenoptimierung bisher gar nicht beachtet.\\
+Prototyping ist bei unserem Projekt besonders nützlich, da bei der Arbeit mit Bienen viele Fehlerquellen sehr schwer vorhersehbar sind. Einige Verhaltensweisen der Bienen, vor allem Reaktionen auf Änderungen ihrer Umgebung, sind sehr ungewöhnlich. Bei einem unserer frühen Versionen hatten wir einen zu großen Kasten vor den Eingang des Bienenstocks gebaut. Daraufhin haben die Bienen das Flugloch nicht mehr gefunden und haben sich stattdessen auf dem Flugbrett-ähnlichen Dach unseres Prototypen gesammelt. Hätten wir unser Produkt ausschließlich theoretisch durchgeplant und nicht frühzeitig getest, wären Fehler, wie dieser erst sehr spät aufgefallen.\\
+Wir wussten zu Beginn unserer Arbeiten nicht, wie genau ein mögliches Endprodukt aussehen könnte. Durch das Herstellen von Prototypen konnten wir auch alle unsere Lösungsansätze testen. Wir konnten sehr viele vage Ideen schnell umsetzen und immer weiter konkretisieren.\\
+Für diese Arbeitsweise war das Arbeiten mit den uns zur Verfügung stehenden 3D-Druckern sehr unersetzbar. Die Kombination aus einem Drucker und Computer-gestütztem Design ermöglichte sehr schnelle Umsetzung von Ideen. Wir nutzten das CAD-Programm ,,Autodesk Fusion 360''. Dieses ist auch für umfangreichere Projekte geeignet und bietet vielseitige Werkzeuge, wie das Simulieren physikalischer Eigenschaften schon vor dem Druck, was den Entwicklungsprozess stark vereinfacht. \\
+Direktes Feetback bekamen wir auch, weil wir direkten Zugriff zu mehreren Bienenvölkern hatten. Dadurch konnten wir auch dynamischer auf entstehender Probleme reagieren. 
+
+% \begin{itemize}
+%     \item Prototypen schnell und leicht an Bienen anbringbar -> schnelles Feedback
+%     \item Schreiben der Software und Machen von Fotos bzw. Starten von Videos remote möglich -> Linux command line Wissen
+% \end{itemize}
 \subsection{Technische Grundlagen}
-Bevor wir überhaupt die Möglichkeit hatten, Prototypen zu bauen und zu testen, mussten einige Grundgegeben sichergestellt werden.\\
-Zum einen brauchten wir eine stabile Stromquelle für Langzeittests. Denn bei den uns zur Verfügung stehenden Bienenkästen ist keine Stromversorgung durch das Stromnetz möglich. Als Energiespeicher brauchten benutzen wir eine alte Autobatterie. Mit einer Spannung von 12V und einer Kapazität von etwa 50 Amperestunden sollte diese bei einem Verbrauch von höchstens 15W länger als 40 Stunden halten. Die Batterie wir durch eine 20W Solarzelle aufgeladen. Außerdem wird die 12 Volt Ausgangsspannung der Batterie durch einen Spannungswandler auf die für von Einplatinencomputer gängige Spannunng 5 Volt heruntergewandelt. Der gesamte Aufbau der Stromversorgung ist im Anhang auf Seite ??? zu erkennen.\\
-Außerdem mussten wir für leichten und schnellen Zugriff auf den \productName \ haben eine WLAN-Verbindung im Garten herstellen. Besonders für den Entwicklungsprozess ist das wichtig.
+% Bevor wir überhaupt die Möglichkeit hatten, Prototypen zu bauen und zu testen, mussten einige Grundgegeben sichergestellt werden.\\
+% Zum einen brauchten wir eine stabile Stromquelle für Langzeittests. Denn bei den uns zur Verfügung stehenden Bienenkästen ist keine Zugang zum Stromnetz möglich. Eine zuverlässige Stromversorgung zu gewährleisten ist in unserem Fall eine große Herausforderung. Denn die bereitzustellende Leistung ist Schubweise sehr groß. Der folgenden Tabelle sind Abschätzungen zur Leistung, die maximal, wenn auch nur für kurze Zeit, von den einzelnen Komponenten benötigt werden, zu entnehmen.
+% \begin{center}
+% \begin{tabular}{p{.4\textwidth} |>{\centering\arraybackslash} m{.4\textwidth}}
+% 	Komponente & Maximale Leistung [Watt] \\ \hline
+% 	Jetson Nano (Einplatinencomputer) & 10 \\
+% 	Kameras & 2 $\cdot$ 1 = 2\\
+% 	Beleuchtung & 4\\
+% 	Servo-Motoren & 2 $\cdot$ 1.5 = 3\\
+% 	Festplatte & 5
+% \end{tabular}
+% \end{center}
+% Als Energiespeicher brauchten benutzen wir eine alte Autobatterie. Mit einer Spannung von 12V und einer Kapazität von etwa 50 Amperestunden sollte diese bei einem durchschnittlichem Verbrauch von höchstens 15W länger als 40 Stunden halten. Die Batterie wir durch eine 20W Solarzelle aufgeladen. Außerdem wird die 12 Volt Ausgangsspannung der Batterie durch einen Spannungswandler auf die für von Einplatinencomputer gängige Spannunng 5 Volt heruntergewandelt. Der gesamte Aufbau der Stromversorgung ist im Anhang auf Seite ??? zu erkennen.\\
+% Außerdem mussten wir für leichten und schnellen Zugriff auf den \productName \ haben eine WLAN-Verbindung im Garten herstellen. Besonders für den Entwicklungsprozess ist es wichtig, ohne physische Verbindung auf das Board zugreifen zu können.
 
-\begin{itemize}
-	\item Stromversorgung sichern
-	\item WLAN-Verbindung
-	\item technische Entscheidungen: erst Raspberry Pi, dann Jetson Nano (ist cool und schnell)
-\end{itemize}
+% \begin{itemize}
+% 	\item Stromversorgung sichern
+% 	\item WLAN-Verbindung
+% 	\item technische Entscheidungen: erst Raspberry Pi, dann Jetson Nano (ist cool und schnell)
+% \end{itemize}
 
-\subsection{Erster Prototypen}
-Bereits im Herbst 2020 haben wir mit dem Bau erster Prototypen begonnen. Diese waren nicht besonders funktional. Die einzige Funktion war es, erste Fehlerquellen ausfündig zu machen. Wären die Bienen beispielsweise von der Technik oder dem Vorbau am Bienenstockeingang gestört worden, hätten wir diese grundsätzlichen Probleme bereits frühzeitig entdeckt.\\
-Die in diesem Protoyp verbaute Rechentechnik ist ein Raspberry Pi, ein sehr beliebter Einplatinencomputer. Als Kamera haben wir das zugehörige Kameramodul ,,Raspberry Pi Camera V2'' verbaut. Diese hat eine Auflösung von 8 Megapixel, der Sensorbereich ist allerdings sehr klein, was sich negativ auf die Bildqualität auswirkt. Das Modul ist sehr beginnerfreundlich und ist vergleichsweise preiswert. Für erste Tests war dieses Modul also ausreichend, ließ allerdings noch Verbesserungsmöglichkeiten offen.
+\subsection{Erster Prototyp}
+% Bereits im Herbst 2020 haben wir mit dem Bau erster Prototypen begonnen. Diese waren nicht besonders funktional. Die einzige Funktion war es, erste Fehlerquellen ausfündig zu machen. Wären die Bienen beispielsweise von der Technik oder dem Vorbau am Bienenstockeingang gestört worden, hätten wir diese grundsätzlichen Probleme bereits frühzeitig entdeckt.\\
+% Die in diesem Protoyp verbaute Rechentechnik ist ein Raspberry Pi, ein sehr beliebter Einplatinencomputer. Als Kamera haben wir das zugehörige Kameramodul ,,Raspberry Pi Camera V2'' verbaut. Diese hat eine Auflösung von 8 Megapixel, der Sensorbereich ist allerdings sehr klein, was sich negativ auf die Bildqualität auswirkt. Das Modul ist sehr beginnerfreundlich und ist vergleichsweise preiswert. Für erste Tests war dieses Modul also ausreichend, ließ allerdings noch Verbesserungsmöglichkeiten offen.
 
 
 
 \subsection{Zweiter Protoyp}
-\begin{itemize}
-    \item groß -> überblickt gesamtes Flugbrett
-    \item mit Technik, die wir langfristig nutzen wollen:
-    \begin{itemize}
-        \item Jetson Nano, 2 x ?MP MIPI Camera, 940nm Led-Strips
-    \end{itemize}
-    \item kurze Tests, mussten wir allerdings abbrechen (wegen einigen Fehlerquellen)
-    \item Fehlerquellen
-    \begin{enumerate}
-        \item Bienen akzeptieren Flugbrett nicht
-        \item Spiegelungen in Plexiglas, das Bienen von Kameras trennt
-        \item super vieeel
-    \end{enumerate}
-\end{itemize}
+% \begin{itemize}
+%     \item groß -> überblickt gesamtes Flugbrett
+%     \item mit Technik, die wir langfristig nutzen wollen:
+%     \begin{itemize}
+%         \item Jetson Nano, 2 x ?MP MIPI Camera, 940nm Led-Strips
+%     \end{itemize}
+%     \item kurze Tests, mussten wir allerdings abbrechen (wegen einigen Fehlerquellen)
+%     \item Fehlerquellen
+%     \begin{enumerate}
+%         \item Bienen akzeptieren Flugbrett nicht
+%         \item Spiegelungen in Plexiglas, das Bienen von Kameras trennt
+%         \item super vieeel anderer kram
+%     \end{enumerate}
+% \end{itemize}
 
 
 
 \subsection{Dritter Protoyp}
-\begin{itemize}
-    \item Ausbesserungen der meisten Fehler
-    \item ausgiebigere Tests; 40GB Video- und Bilddaten
-\end{itemize}
+% \begin{itemize}
+%     \item Ausbesserungen der meisten Fehler
+%     \item ausgiebigere Tests; Sammeln von 40GB Video- und Bilddaten
+% \end{itemize}
 
 
 % ---------------------------------------
