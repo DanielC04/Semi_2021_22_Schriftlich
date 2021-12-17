@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.20)  17 DEC 2021 23:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.11.20)  17 DEC 2021 23:28
 entering extended mode
 **d:/SemiABI/Semi_2021_22_Schriftlich/Main.tex
 (d:/SemiABI/Semi_2021_22_Schriftlich/Main.tex
@@ -586,22 +586,18 @@ Package caption Info: Standard document class detected.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
-) (D:\Apps\MiKTeX\tex/latex/caption\subcaption.sty
-Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-\c@subfigure=\count343
-\c@subtable=\count344
 ) (D:\Apps\MiKTeX\tex/latex/lineno\lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count345
+\linenopenalty=\count343
 \output=\toks46
-\linenoprevgraf=\count346
+\linenoprevgraf=\count344
 \linenumbersep=\dimen301
 \linenumberwidth=\dimen302
-\c@linenumber=\count347
-\c@pagewiselinenumber=\count348
-\c@LN@truepage=\count349
-\c@internallinenumber=\count350
-\c@internallinenumbers=\count351
+\c@linenumber=\count345
+\c@pagewiselinenumber=\count346
+\c@LN@truepage=\count347
+\c@internallinenumber=\count348
+\c@internallinenumbers=\count349
 \quotelinenumbersep=\dimen303
 \bframerule=\dimen304
 \bframesep=\dimen305
@@ -615,51 +611,44 @@ Package: moredefs 2001/08/31 v1.8 more defining commands (Frankenstein's brain)
 \sc@toks@b=\toks48
 )
 \nc@toks@a=\toks49
-\c@IncludeDepth=\count352
+\c@IncludeDepth=\count350
 ) (D:\Apps\MiKTeX\tex/latex/frankenstein\tag.sto)
    defining Unicode char U+00B0 (decimal 176)
  (D:\Apps\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count353
+\l__color_backend_stack_int=\count351
 \l__pdf_internal_box=\box71
-) (Main.aux
-
-LaTeX Warning: Label `fig:annotated_edited' multiply defined.
-
-
-LaTeX Warning: Label `fig:annotated_edited' multiply defined.
-
-)
+) (Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
  (D:\Apps\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
+\scratchcounter=\count352
 \scratchdimen=\dimen306
 \scratchbox=\box72
-\nofMPsegments=\count355
-\nofMParguments=\count356
+\nofMPsegments=\count353
+\nofMParguments=\count354
 \everyMPshowfont=\toks50
-\MPscratchCnt=\count357
+\MPscratchCnt=\count355
 \MPscratchDim=\dimen307
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
 \everyMPtoPDFconversion=\toks51
 ) (D:\Apps\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -667,7 +656,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (D:\Apps\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count360
+\c@lstlisting=\count358
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -703,10 +692,10 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 46.
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+Package hyperref Info: Link coloring OFF on input line 35.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 (Main.out) (Main.out)
 \@outlinefile=\write4
 \openout4 = `Main.out'.
@@ -714,40 +703,40 @@ LaTeX Info: Redefining \nameref on input line 46.
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into your preamble.
- on input line 46.
+ on input line 35.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 50.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 38.
 (D:\Apps\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-<images/logo.png, id=146, 493.3632pt x 317.0244pt>
+<images/logo.png, id=106, 493.3632pt x 317.0244pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 59.
+Package pdftex.def Info: images/logo.png  used on input line 47.
 (pdftex.def)             Requested size: 197.34178pt x 126.80751pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
  (D:\Apps\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
  (D:\Apps\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/ruelt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./images/logo.png>] (Main.toc
 
-Package hyperref Warning: No autoref name for `' on input line 32.
+Package hyperref Warning: No autoref name for `' on input line 22.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 32.
+Package hyperref Warning: Suppressing link with empty target on input line 22.
 
 
-Package hyperref Warning: No autoref name for `' on input line 33.
+Package hyperref Warning: No autoref name for `' on input line 23.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 33.
+Package hyperref Warning: Suppressing link with empty target on input line 23.
 
 )
 \tf@toc=\write5
@@ -756,206 +745,139 @@ Package hyperref Warning: Suppressing link with empty target on input line 33.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \newpage
+l.76 \newpage
               [1]
-Underfull \hbox (badness 10000) in paragraph at lines 95--102
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
 
  []
 
-[2]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 117.
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 117--126
+
+ []
+
+[4]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 131.
  (D:\Apps\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
-
- []
-
-[3]
-<images/Varroamilbe.jpg, id=229, 145.7445pt x 91.542pt>
-File: images/Varroamilbe.jpg Graphic file (type jpg)
-<use images/Varroamilbe.jpg>
-Package pdftex.def Info: images/Varroamilbe.jpg  used on input line 141.
-(pdftex.def)             Requested size: 318.66948pt x 200.19037pt.
-<images/Verbreitung Varroamilbe.png, id=231, 525.46312pt x 432.86719pt>
-File: images/Verbreitung Varroamilbe.png Graphic file (type png)
-<use images/Verbreitung Varroamilbe.png>
-Package pdftex.def Info: images/Verbreitung Varroamilbe.png  used on input line 154.
-(pdftex.def)             Requested size: 318.66948pt x 262.52283pt.
- [4 <./images/Varroamilbe.jpg>] [5 <./images/Verbreitung Varroamilbe.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 174--183
-
- []
-
-[6]
-<images/575nm.jpg, id=251, 3031.325pt x 2473.24pt>
-File: images/575nm.jpg Graphic file (type jpg)
-<use images/575nm.jpg>
-Package pdftex.def Info: images/575nm.jpg  used on input line 191.
-(pdftex.def)             Requested size: 95.6018pt x 77.96785pt.
-<images/595nm.jpg, id=252, 3031.325pt x 2473.24pt>
-File: images/595nm.jpg Graphic file (type jpg)
-<use images/595nm.jpg>
-Package pdftex.def Info: images/595nm.jpg  used on input line 192.
-(pdftex.def)             Requested size: 95.6018pt x 77.96785pt.
-<images/660nm.jpg, id=253, 3031.325pt x 2473.24pt>
-File: images/660nm.jpg Graphic file (type jpg)
-<use images/660nm.jpg>
-Package pdftex.def Info: images/660nm.jpg  used on input line 193.
-(pdftex.def)             Requested size: 95.6018pt x 77.96785pt.
-<images/700nm.jpg, id=254, 3031.325pt x 2473.24pt>
-File: images/700nm.jpg Graphic file (type jpg)
-<use images/700nm.jpg>
-Package pdftex.def Info: images/700nm.jpg  used on input line 194.
-(pdftex.def)             Requested size: 95.6018pt x 77.96785pt.
-<images/770nm.jpg, id=255, 3031.325pt x 2473.24pt>
-File: images/770nm.jpg Graphic file (type jpg)
-<use images/770nm.jpg>
-Package pdftex.def Info: images/770nm.jpg  used on input line 195.
-(pdftex.def)             Requested size: 95.6018pt x 77.96785pt.
-<images/850nm.jpg, id=256, 3031.325pt x 2473.24pt>
-File: images/850nm.jpg Graphic file (type jpg)
-<use images/850nm.jpg>
-Package pdftex.def Info: images/850nm.jpg  used on input line 196.
-(pdftex.def)             Requested size: 95.6018pt x 77.96785pt.
-<images/870nm.jpg, id=257, 3031.325pt x 2473.24pt>
-File: images/870nm.jpg Graphic file (type jpg)
-<use images/870nm.jpg>
-Package pdftex.def Info: images/870nm.jpg  used on input line 197.
-(pdftex.def)             Requested size: 95.6018pt x 77.96785pt.
-<images/925nm.jpg, id=258, 3031.325pt x 2473.24pt>
-File: images/925nm.jpg Graphic file (type jpg)
-<use images/925nm.jpg>
-Package pdftex.def Info: images/925nm.jpg  used on input line 198.
-(pdftex.def)             Requested size: 95.6018pt x 77.96785pt.
-<images/940nm.jpg, id=259, 3031.325pt x 2473.24pt>
-File: images/940nm.jpg Graphic file (type jpg)
-<use images/940nm.jpg>
-Package pdftex.def Info: images/940nm.jpg  used on input line 199.
-(pdftex.def)             Requested size: 95.6018pt x 77.96785pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--201
-
- []
-
-
-Overfull \hbox (13.16725pt too wide) in paragraph at lines 204--204
+Overfull \hbox (13.16725pt too wide) in paragraph at lines 131--131
 [][][][]$\T1/cmtt/m/n/9 https : / / www . heizstrahler-[]direkt . de / blog / ir-[]heizstrahler-[]die-[]drei-[]verschiedenen-[]strahlungstypen/$[]| 
  []
 
-[7 <./images/575nm.jpg> <./images/595nm.jpg> <./images/660nm.jpg> <./images/700nm.jpg> <./images/770nm.jpg> <./images/850nm.jpg> <./images/870nm.jpg> <./images/925nm.jpg> <./images/940nm.jpg>] [8] [9] [10]
+[5] [6] [7]
 
-Package hyperref Warning: No autoref name for `' on input line 294.
+Package hyperref Warning: No autoref name for `' on input line 217.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 294.
+Package hyperref Warning: Suppressing link with empty target on input line 217.
 
-<images/annotated_edited.png, id=292, 1042.64531pt x 304.88907pt>
+<images/annotated_edited.png, id=197, 1042.64531pt x 304.88907pt>
 File: images/annotated_edited.png Graphic file (type png)
 <use images/annotated_edited.png>
-Package pdftex.def Info: images/annotated_edited.png  used on input line 297.
+Package pdftex.def Info: images/annotated_edited.png  used on input line 220.
 (pdftex.def)             Requested size: 364.19667pt x 106.49876pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--304
+Underfull \hbox (badness 10000) in paragraph at lines 224--228
 
  []
 
-[11 <./images/annotated_edited.png>] [12]
-Overfull \hbox (2.86543pt too wide) in paragraph at lines 318--318
+[8 <./images/annotated_edited.png>]
+Overfull \hbox (2.86543pt too wide) in paragraph at lines 243--243
 []|$\OT1/cmr/m/n/10.95 44\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 7[]$| 
  []
 
 
-Overfull \hbox (2.86543pt too wide) in paragraph at lines 320--320
+Overfull \hbox (2.86543pt too wide) in paragraph at lines 245--245
 []|$\OT1/cmr/m/n/10.95 29\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 2[]$| 
  []
 
-[13] [14] [15] [16]
 
-Package hyperref Warning: No autoref name for `' on input line 421.
+Overfull \hbox (2.41597pt too wide) in paragraph at lines 251--259
+ [][] 
+ []
+
+[9]
+
+Package hyperref Warning: No autoref name for `' on input line 315.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 421.
+Package hyperref Warning: Suppressing link with empty target on input line 315.
 
-<images/TPZ_Cameras_Idea.pdf, id=328, page=1, 597.50829pt x 845.0471pt>
+
+Package hyperref Warning: No autoref name for `' on input line 316.
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 316.
+
+[10] [11] [12]
+
+Package hyperref Warning: No autoref name for `' on input line 336.
+
+
+Package hyperref Warning: Suppressing link with empty target on input line 336.
+
+<images/TPZ_Cameras_Idea.pdf, id=238, page=1, 597.50829pt x 845.0471pt>
 File: images/TPZ_Cameras_Idea.pdf Graphic file (type pdf)
 <use images/TPZ_Cameras_Idea.pdf, page 1>
-Package pdftex.def Info: images/TPZ_Cameras_Idea.pdf , page1 used on input line 424.
+Package pdftex.def Info: images/TPZ_Cameras_Idea.pdf , page1 used on input line 339.
 (pdftex.def)             Requested size: 179.25386pt x 253.51608pt.
-<images/TPZ_Cameras_Idea.pdf, id=329, page=2, 597.50829pt x 845.0471pt>
+<images/TPZ_Cameras_Idea.pdf, id=239, page=2, 597.50829pt x 845.0471pt>
 File: images/TPZ_Cameras_Idea.pdf Graphic file (type pdf)
 <use images/TPZ_Cameras_Idea.pdf, page 2>
-Package pdftex.def Info: images/TPZ_Cameras_Idea.pdf , page2 used on input line 425.
-(pdftex.def)             Requested size: 179.25386pt x 253.51608pt.
-<images/TPZ_Cameras_Idea.pdf, id=330, page=3, 597.50829pt x 845.0471pt>
-File: images/TPZ_Cameras_Idea.pdf Graphic file (type pdf)
-<use images/TPZ_Cameras_Idea.pdf, page 3>
-Package pdftex.def Info: images/TPZ_Cameras_Idea.pdf , page3 used on input line 426.
-(pdftex.def)             Requested size: 179.25386pt x 253.51608pt.
-<images/TPZ_Cameras_Idea.pdf, id=331, page=4, 597.50829pt x 845.0471pt>
-File: images/TPZ_Cameras_Idea.pdf Graphic file (type pdf)
-<use images/TPZ_Cameras_Idea.pdf, page 4>
-Package pdftex.def Info: images/TPZ_Cameras_Idea.pdf , page4 used on input line 427.
+Package pdftex.def Info: images/TPZ_Cameras_Idea.pdf , page2 used on input line 340.
 (pdftex.def)             Requested size: 179.25386pt x 253.51608pt.
 
-Package hyperref Warning: No autoref name for `' on input line 432.
+Package hyperref Warning: No autoref name for `' on input line 345.
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 432.
+Package hyperref Warning: Suppressing link with empty target on input line 345.
 
-<images/annotated1.png, id=332, 990.70125pt x 289.83281pt>
+<images/annotated1.png, id=240, 990.70125pt x 289.83281pt>
 File: images/annotated1.png Graphic file (type png)
 <use images/annotated1.png>
-Package pdftex.def Info: images/annotated1.png  used on input line 435.
+Package pdftex.def Info: images/annotated1.png  used on input line 348.
 (pdftex.def)             Requested size: 364.19667pt x 106.54654pt.
-<images/annotated2.png, id=333, 890.5772pt x 260.47313pt>
+<images/annotated2.png, id=241, 890.5772pt x 260.47313pt>
 File: images/annotated2.png Graphic file (type png)
 <use images/annotated2.png>
-Package pdftex.def Info: images/annotated2.png  used on input line 441.
+Package pdftex.def Info: images/annotated2.png  used on input line 354.
 (pdftex.def)             Requested size: 364.19667pt x 106.52043pt.
-<images/annotated3.png, id=334, 902.6222pt x 264.23718pt>
+<images/annotated3.png, id=242, 902.6222pt x 264.23718pt>
 File: images/annotated3.png Graphic file (type png)
 <use images/annotated3.png>
-Package pdftex.def Info: images/annotated3.png  used on input line 447.
+Package pdftex.def Info: images/annotated3.png  used on input line 360.
 (pdftex.def)             Requested size: 364.19667pt x 106.6163pt.
-[17 <./images/TPZ_Cameras_Idea.pdf> <./images/TPZ_Cameras_Idea.pdf> <./images/TPZ_Cameras_Idea.pdf> <./images/TPZ_Cameras_Idea.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 463--467
+[13 <./images/TPZ_Cameras_Idea.pdf> <./images/TPZ_Cameras_Idea.pdf> <./images/annotated1.png> <./images/annotated2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 376--380
 []$\T1/cmtt/m/n/10.95 https : / / www . br . de / wissen / bienen-[]varroamilbe-[]bienensterben-[]lithiumchlorid-[]100 .
  []
 
-[18 <./images/annotated1.png> <./images/annotated2.png> <./images/annotated3.png>]
-Overfull \hbox (46.90298pt too wide) in paragraph at lines 487--491
+
+Overfull \hbox (46.90298pt too wide) in paragraph at lines 400--404
 []$\T1/cmtt/m/n/10.95 https : / / www . udemy . com / course / python-[]for-[]computer-[]vision-[]with-[]opencv-[]and-[]deep-[]learning/$[] 
  []
 
-[19] (Main.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+[14 <./images/annotated3.png>] (Main.aux)
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: DC1BDD02D3086469895433EED44FA72D;2601.
+(rerunfilecheck)             Checksum: 26C7C770842DF816F9ACEA5F05038FAF;1790.
  )
-(\end occurred when \ifx on line 309 was incomplete)
-(\end occurred when \ifx on line 231 was incomplete)
-(\end occurred when \ifx on line 176 was incomplete)
-(\end occurred when \ifx on line 97 was incomplete)
-(\end occurred when \ifx on line 95 was incomplete) 
+(\end occurred when \ifx on line 235 was incomplete)
+(\end occurred when \ifx on line 233 was incomplete)
+(\end occurred when \ifx on line 227 was incomplete)
+(\end occurred when \ifx on line 206 was incomplete) 
 Here is how much of TeX's memory you used:
- 33012 strings out of 478706
- 764330 string characters out of 2861415
- 1214034 words of memory out of 3000000
- 50409 multiletter control sequences out of 15000+600000
- 425211 words of font info for 83 fonts, out of 8000000 for 9000
+ 32824 strings out of 478706
+ 760522 string characters out of 2861415
+ 1215287 words of memory out of 3000000
+ 50253 multiletter control sequences out of 15000+600000
+ 424448 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 105i,22n,115p,1426b,2350s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{i2} has been referenced but does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{i1} has been referenced but does not exist, replaced by a fixed one
-
- <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Main.pdf (20 pages, 11162856 bytes).
+ 105i,22n,115p,1256b,2311s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\ruelt\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Apps/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Main.pdf (15 pages, 3554531 bytes).
 PDF statistics:
- 1336 PDF objects out of 1440 (max. 8388607)
- 85 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1139 PDF objects out of 1200 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 
