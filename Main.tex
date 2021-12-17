@@ -90,9 +90,9 @@ Datum: & \today
 % ------------Einleitung-----------------       1 Seite
 % ---------------------------------------
 \section{Einleitung}
-Jährlich sterben etwa 15\% der Bienenvölker in Deutschland an den Folgen von Varroamilbenbefall(i1).
+Jährlich sterben etwa 15\% der Bienenvölker in Deutschland an den Folgen von Varroamilbenbefall \bibRef{i1}.
 Viele weitere Bienenstöcke werden zusätzlich durch den Parasiten stark geschwächt.\\
-Dies ist ein großes Problem: Nicht nur für Bienen, sondern auch für Natur und Mensch. Weltweit sind 80\% der Pflanzen auf die Bestäubung von Bienen angewiesen. Die enorme Bedeutung der Bienen spiegelt sich auch im geschätzten Wirtschaftswert der Biene, etwa 265 Milliarden Euro jährlich, wieder(i2).
+Dies ist ein großes Problem: Nicht nur für Bienen, sondern auch für Natur und Mensch. Weltweit sind 80\% der Pflanzen auf die Bestäubung von Bienen angewiesen. Die enorme Bedeutung der Bienen spiegelt sich auch im geschätzten Wirtschaftswert der Biene, etwa 265 Milliarden Euro jährlich, wieder \bibRef{i2}.
 Aktuell gibt es verschiedene Wege die Varroamilbe zu bekämpfen. Jedoch sind die meisten dieser Methoden ineffizient \footnote{starke Quelle}. Des Weiteren sind die ökologischen Schäden, welche die Anwendung der gängigen Säurebehandlung hinter sich ziehen, nicht zuvernachlässigen. Sie sollten mit dem Nutzen in jedem Falle abgewogen werden. Andere Bekämpfungsmethoden sind unter anderem die Wärmebehandlung von ganzen Bienenstöcken. Diese hat jedoch nur einen Wirkungsgrad von circa 60\%.\\
 Wir haben uns zum Ziel gesetzt, eine neue Behandlungsmethode zu entwickeln. Dabei ist uns besonders wichtig, den ökologischen Schaden für die Bienen und die Umwelt so gering wie möglich zu halten. Unser Ziel ist dabei, nur die betroffenen Bienen zu behandeln. Diese wollen wir durch eine optische Erkennung der Varroamilben am Bienenstockeingang ermöglichen. Anschließend sollen befallene Bienen erkannt und abgesondert werden. Nach diesem Prozess kann die betroffenen Biene behandelt werden und wieder in den Bienenstock zurückgeführt werden. Dieses Vorgehen ermöglicht darüberhinaus eine ganzjährige Behandlung eines Bienestocks und hat im hat im Gegensatz zu bisherigen Methoden das Potenzial, das Eindringen der Varroamilben in den Stock, präventiv zu verhindern.  Dem gegenüber steht z.B. die Säurebehandlung, welche nur durchgeführt werden kann, wenn die Bienen keinen Nektar sammeln. Unser Hauptziel besteht darin, den erstmaligen Befall mit der Varroamilbe zu verhindern. Eine Kombination von konventionellen Behandlungsmethoden und unserer neuen Mehthode könnte Bienenstöcke vollständig von Milbenbefall befreien.\\
 In unserer Arbeit fokussieren wir uns auf die optische Varroamilbenerkennung, um die Grundlage zur Bekämpfung zu schaffen. Des Weiteren können durch die Erkennung des Schädlings Forschungsdaten zum Verhalten von Bienen und Varroamilben kostenkünstig erhoben werden. Die Bekämpfung der Varroamilben arbeiten wir konzeptionell aus und sammeln unsere technischen Umsetzungsideen.\\
@@ -171,7 +171,7 @@ In China wurde die Milbe Varroa destructor erstmals 1958 auf einer Apis mellifer
 \subsection{Aufbaumöglichkeiten der Varroaerkennung}
 Bevor wir mit dem Bau von Prototypen begannen, haben wir durch Brainstorming so viele Ideen wie möglich gesammelt.\\
 Ein erster Ansatz war, die Bienen mit Kameras zu filmen und somit die Milben optisch zu erkennen. Durch Anpassung der äußeren Bedingungen, wie Lichtverhältnisse, wollten wir die Erkennung so zuverlässig wie möglich gestalten.\\
-Eine weitere Idee beruht auf einer möglichen Wärmedifferenz zwischen Bienen und Milben: Wäre die Differenz der Körpertemperaturen nicht marginal, könnten wir beim Filmen mit Wärmebildkameras vermutlich Milben als warme bzw. kalte Punkte auf den Bienen erkennen. Diese Methode hätte allerdings beträchtliche Nachteile: Zum einen sind Infrarot-Kameras mit der von uns benötigten Auflösung sehr teuer. Unsere Varroamilbenerkennung würde also auch langfristig nicht preiswert sein und somit keine weitreichende Anwendung finden. Außerdem sind Bienen wechselwarm \footnote{https://link.springer.com/article/10.1007/BF00298066}. Die stark von der Außentemperatur abhängenden Schwankungen der Körperkerntemperatur würden wahrscheinlich zu Ungenauigkeiten und ungeahnten Problem bei der Milbenerkennung führen.\\
+Eine weitere Idee beruht auf einer möglichen Wärmedifferenz zwischen Bienen und Milben: Wäre die Differenz der Körpertemperaturen nicht marginal, könnten wir beim Filmen mit Wärmebildkameras vermutlich Milben als warme bzw. kalte Punkte auf den Bienen erkennen. Diese Methode hätte allerdings beträchtliche Nachteile: Zum einen sind Infrarot-Kameras mit der von uns benötigten Auflösung sehr teuer. Unsere Varroamilbenerkennung würde also auch langfristig nicht preiswert sein und somit keine weitreichende Anwendung finden. Außerdem sind Bienen wechselwarm\bibRef{wechselwarm}. Die stark von der Außentemperatur abhängenden Schwankungen der Körperkerntemperatur würden wahrscheinlich zu Ungenauigkeiten und ungeahnten Problem bei der Milbenerkennung führen.\\
 Auch andere Möglichkeiten, die wir in Betracht zogen, hatten große Nachteile oder waren mit unseren Mitteln nicht umsetzbar. Also kamen wir zu dem Schluss, das Erkennen der Milben mit Kameras durchzuführen.\\
 Nach unserer ersten Abwägung von Ideen war der nächste Schritt, das Scannen der Bienen konzeptionell zu planen. Alle unserer Überlegungen beruhten dabei auf einem von zwei grundsätzlichen Ansätzen: Entweder jede Biene wird durch Bewegung der Kamera bzw. Veränderung des Zooms einzeln fokussiert und anschließend auf Varroen gescannt oder eine Kamera ist statisch und überwacht gleichzeitig mehrere Bienen aus ihrem Sichtfeld. Eine konzeptionelle Gegenüberstellungen der beiden Möglichkeiten ist in Abbildung ? (Anhang Seite ?) zu erkennen. Bei der Entscheidung für eine Herangehensweise, mussten wir Klarheit und Auflösung der Bilder gegen Kosten und Aufwand abwägen.\\
 Der erste der beiden Ansätze hatte den großen Vorteil, dass die Auflösung der fotografierten Biene höher wäre. Versuche von uns haben gezeigt, dass ein kleinerer Abstand der Kamera zur Biene für die Bildqualität und somit auch für die Varroaerkennung, unabhängig von der verbesserten Auflösung, förderlich ist. Allerdings brächte man für eine Durchführung dieser Idee in jedem Fall mechanische Vorrichtungen. Die Skizze einer möglichen Umsetzung mit auf linearen Achsen montierten Spiegeln ist im Anhang auf Seite ???? zu erkennen.\\
@@ -211,19 +211,23 @@ Bei den Experimenten zum Untergrund ergab sich, dass Reflexionen und Streuungen 
 \newpage
 \section{Entwicklung und Verbesserung verschiedener Prototypen}
 \subsection{Angewandte Arbeitsmethoden}
-Die wohl wichtigste von uns angewandte Arbeitsmethode ist das Rapid-Prototyping. Prototyping ist ein Verfahren zum Annähern an angestrebte Ergebnisse mittels aufwandsarmer, günstiger Testversionen\footnote{https://www.businessinsider.de/gruenderszene/lexikon/begriffe/prototyping/}. Wir kamen durch den Bau unserer Prototypen und durch das ständige Ausbessern von Fehlern unserem Ziel, einer immer funktionalen Milbenerkennung, immer näher. Unwichtige Details und ablenkende, kleinere Probleme können bei diesem Prozess vorerst ignoriert werden. Der Fokus auf die wesentlichen Herausforderung kann somit bei der Entwicklung erhalten bleiben. Wir haben beispielsweise Witterungsbeständigkeit erst bei späteren Versionen und Kostenoptimierung bisher gar nicht beachtet.\\
+Die wohl wichtigste von uns angewandte Arbeitsmethode ist das Rapid-Prototyping. Diese Arbeitsmethode ist ein Verfahren zum Annähern an angestrebte Ergebnisse mittels aufwandsarmer, günstiger Testversionen\footnote{https://www.businessinsider.de/gruenderszene/lexikon/begriffe/prototyping/}. Wir kamen durch den Bau unserer Prototypen und durch das ständige Ausbessern von Fehlern unserem Ziel, einer immer funktionalen Milbenerkennung, immer näher. Unwichtige Details und ablenkende, kleinere Probleme können bei diesem Prozess vorerst ignoriert werden. Der Fokus auf die wesentlichen Herausforderung kann somit bei der Entwicklung erhalten bleiben. Wir haben beispielsweise Witterungsbeständigkeit erst bei späteren Versionen und Kostenoptimierung bisher gar nicht beachtet.\\
 Prototyping ist bei unserem Projekt besonders nützlich, da bei der Arbeit mit Bienen viele Fehlerquellen sehr schwer vorhersehbar sind. Einige Verhaltensweisen der Bienen, vor allem Reaktionen auf Änderungen ihrer Umgebung, sind sehr ungewöhnlich. Bei einem unserer frühen Versionen hatten wir einen zu großen Kasten vor den Eingang des Bienenstocks gebaut. Daraufhin haben die Bienen das Flugloch nicht mehr gefunden und haben sich stattdessen auf dem Flugbrett-ähnlichen Dach unseres Prototypen gesammelt. Hätten wir unser Produkt ausschließlich theoretisch durchgeplant und nicht frühzeitig getest, wären Fehler, wie dieser erst sehr spät aufgefallen.\\
 Wir wussten zu Beginn unserer Arbeiten nicht, wie genau ein mögliches Endprodukt aussehen könnte. Durch das Herstellen von Prototypen konnten wir auch alle unsere Lösungsansätze testen. Wir konnten sehr viele vage Ideen schnell umsetzen und immer weiter konkretisieren.\\
-Für diese Arbeitsweise war das Arbeiten mit den uns zur Verfügung stehenden 3D-Druckern sehr unersetzbar. Die Kombination aus einem Drucker und Computer-gestütztem Design ermöglichte sehr schnelle Umsetzung von Ideen. Wir nutzten das CAD-Programm ,,Autodesk Fusion 360''. Dieses ist auch für umfangreichere Projekte geeignet und bietet vielseitige Werkzeuge, wie das Simulieren physikalischer Eigenschaften schon vor dem Druck, was den Entwicklungsprozess stark vereinfacht. \\
-Direktes Feetback bekamen wir auch, weil wir direkten Zugriff zu mehreren Bienenvölkern hatten. Dadurch konnten wir auch dynamischer auf entstehender Probleme reagieren. 
+Für diese Arbeitsweise war das Arbeiten mit den uns zur Verfügung stehenden 3D-Druckern sehr unersetzbar. Die Kombination aus einem Drucker und Computer-gestütztem Design ermöglichte sehr schnelle Umsetzung von Ideen. Wir nutzten das CAD-Programm ,,Autodesk Fusion 360''. Dieses ist auch für umfangreichere Projekte geeignet und bietei vielseitige Werkzeuge, wie das Simulieren physikalischer Eigenschaften schon vor dem Druck, was den Entwicklungsprozess stark vereinfacht. \\
+Schnelles Feetback bekamen wir auch, weil wir direkten Zugriff zu mehreren Bienenvölkern hatten. Dadurch konnten wir auch dynamischer auf entstehender Probleme reagieren und schon früh besonders schwer umzusetztende Ansätze identifizieren.
 
-% \begin{itemize}
-%     \item Prototypen schnell und leicht an Bienen anbringbar -> schnelles Feedback
-%     \item Schreiben der Software und Machen von Fotos bzw. Starten von Videos remote möglich -> Linux command line Wissen
-% \end{itemize}
 \subsection{Technische Grundlagen}
-% Bevor wir überhaupt die Möglichkeit hatten, Prototypen zu bauen und zu testen, mussten einige Grundgegeben sichergestellt werden.\\
-% Zum einen brauchten wir eine stabile Stromquelle für Langzeittests. Denn bei den uns zur Verfügung stehenden Bienenkästen ist keine Zugang zum Stromnetz möglich. Eine zuverlässige Stromversorgung zu gewährleisten ist in unserem Fall eine große Herausforderung. Denn die bereitzustellende Leistung ist Schubweise sehr groß. Der folgenden Tabelle sind Abschätzungen zur Leistung, die maximal, wenn auch nur für kurze Zeit, von den einzelnen Komponenten benötigt werden, zu entnehmen.
+Bevor wir überhaupt die Möglichkeit hatten, Prototypen zu bauen und zu testen, mussten einige Grundgegeben sichergestellt werden.\\
+Zum einen brauchten wir eine stabile Stromquelle für Langzeittests. Denn bei den uns zur Verfügung stehenden Bienenkästen ist keine Zugang zum Stromnetz möglich. Eine zuverlässige Stromversorgung zu gewährleisten ist in unserem Fall eine große Herausforderung und war anfangs lange Zeit eine Fehlerquelle von einigen Problemen. Denn die bereitzustellende Leistung ist Zeitweise, immer wenn gerade eine Milbe erkannt wurde, sehr groß. Zu dem ständigen Stromverbrauch des Einplatinencomputers, der Kameras und der Beleuchtung kommen bei der Entdeckung einer Varroamilbe die Last von zwei Servo-Motoren, einem Laser und einer Festplatte zum Aufzeichnen der Daten. So können unseren Abschätzungen zufolge temporär bis zu 20W benötigt werden. Da alle gängigen Einplatinencomputer mit einer Eingangsspannung von $U_{Ges} = 5V$ arbeiten, ist der fließende Strom beträchtlich:
+$$ P = U_{Ges} \cdot I \Longleftrightarrow I = \dfrac{P}{U_{Ges}} \approx \dfrac{20W}{5V} = 4A$$
+Bei so einer hohen Stromstärke geht selbst bei kleinem Innenwiderstand der Kabel und Steckverbindungen eine hohe Verlustleistung in Form von Wärme verloren. Schon bei einem Innenwiderstand von lediglich $R_i = 0.1\varOmega$ ist dieser Effekt bemerkbar. Unter der Annahme diesen Widerstands des Kabels würde dort die Spannung $U_i$ mit
+$$R_i = \dfrac{U_i}{I} \Longleftrightarrow U_i = R_i \cdot I \approx 0.1\varOmega \cdot 4A = 0.4V$$
+abfallen. Das bedeutet auch, dass ein zu niedrige Versorgungsspannung an den Komponenten unseres Aufbaus ankommt und unvorhersehbare Effekte auslöst. Das Jetson Nano, das schließich von uns gewählte Baord zur Auswertung der Kamerabilder, drosselt beispielsweise die Rechenleistung oder schaltet bei zu niedrigen Eingangsspannungen das Board ganz ab.\\
+Nachdem wir die Spannungsversorgung als Fehlerquelle identifizert hatten, konnten wir durch Verbesserung aller Löt- und Steckverbindungen das beschriebene Problem beseitigen. 
+Als Energiespeicher brauchten benutzen wir eine alte Autobatterie. Mit einer Spannung von 12V und einer Kapazität von etwa 50 Amperestunden sollte diese bei einem durchschnittlichem Verbrauch von höchstens 15W länger als 40 Stunden halten. Die Batterie wir durch eine 20W Solarzelle aufgeladen. Außerdem wird die 12 Volt Ausgangsspannung der Batterie durch einen Spannungswandler auf die für von Einplatinencomputer benötigten 5 Volt heruntergewandelt. Der gesamte Aufbau der Stromversorgung ist im Anhang auf Seite ??? zu erkennen.\\
+Eine weitere Grundvorraussetzung für leichten und schnellen Zugriff auf den \productName \ st es, eine WLAN-Verbindung im Garten herstellen. Besonders für den Entwicklungsprozess ist es wichtig, ohne physische Verbindung auf das Board zugreifen zu können. Auf diese Weise konnten wir per SSH-Verbindung auf den Einplatinencomputer zugreifen. SSH, kurz für ,,Secure Shell'', ist ein kryptographisches Protokoll durch das Entwickler Zugang zu Kommandozeilen von entfernten Servern oder Computern erhalten \bibRef{ssh}.\\
+Wir konnten Programme starten, die Ergebnisse einsehen und sogar die Software ändern, während unser Prototyp an einem Bienenstock angebracht war. Dadurch konnten wir unseren Entwicklungsprozess weiter vereinfachen.
 % \begin{center}
 % \begin{tabular}{p{.4\textwidth} |>{\centering\arraybackslash} m{.4\textwidth}}
 % 	Komponente & Maximale Leistung [Watt] \\ \hline
@@ -234,22 +238,14 @@ Direktes Feetback bekamen wir auch, weil wir direkten Zugriff zu mehreren Bienen
 % 	Festplatte & 5
 % \end{tabular}
 % \end{center}
-% Als Energiespeicher brauchten benutzen wir eine alte Autobatterie. Mit einer Spannung von 12V und einer Kapazität von etwa 50 Amperestunden sollte diese bei einem durchschnittlichem Verbrauch von höchstens 15W länger als 40 Stunden halten. Die Batterie wir durch eine 20W Solarzelle aufgeladen. Außerdem wird die 12 Volt Ausgangsspannung der Batterie durch einen Spannungswandler auf die für von Einplatinencomputer gängige Spannunng 5 Volt heruntergewandelt. Der gesamte Aufbau der Stromversorgung ist im Anhang auf Seite ??? zu erkennen.\\
-% Außerdem mussten wir für leichten und schnellen Zugriff auf den \productName \ haben eine WLAN-Verbindung im Garten herstellen. Besonders für den Entwicklungsprozess ist es wichtig, ohne physische Verbindung auf das Board zugreifen zu können.
 
-% \begin{itemize}
-% 	\item Stromversorgung sichern
-% 	\item WLAN-Verbindung
-% 	\item technische Entscheidungen: erst Raspberry Pi, dann Jetson Nano (ist cool und schnell)
-% \end{itemize}
-
-\subsection{Erster Prototyp}
+\subsection{Bau und Verbesserung von Prototypen}
 % Bereits im Herbst 2020 haben wir mit dem Bau erster Prototypen begonnen. Diese waren nicht besonders funktional. Die einzige Funktion war es, erste Fehlerquellen ausfündig zu machen. Wären die Bienen beispielsweise von der Technik oder dem Vorbau am Bienenstockeingang gestört worden, hätten wir diese grundsätzlichen Probleme bereits frühzeitig entdeckt.\\
 % Die in diesem Protoyp verbaute Rechentechnik ist ein Raspberry Pi, ein sehr beliebter Einplatinencomputer. Als Kamera haben wir das zugehörige Kameramodul ,,Raspberry Pi Camera V2'' verbaut. Diese hat eine Auflösung von 8 Megapixel, der Sensorbereich ist allerdings sehr klein, was sich negativ auf die Bildqualität auswirkt. Das Modul ist sehr beginnerfreundlich und ist vergleichsweise preiswert. Für erste Tests war dieses Modul also ausreichend, ließ allerdings noch Verbesserungsmöglichkeiten offen.
 
 
 
-\subsection{Zweiter Protoyp}
+% ----- Zweiter Protoyp ---------
 % \begin{itemize}
 %     \item groß -> überblickt gesamtes Flugbrett
 %     \item mit Technik, die wir langfristig nutzen wollen:
@@ -267,7 +263,7 @@ Direktes Feetback bekamen wir auch, weil wir direkten Zugriff zu mehreren Bienen
 
 
 
-\subsection{Dritter Protoyp}
+% ------ Dritter Protoyp --------
 % \begin{itemize}
 %     \item Ausbesserungen der meisten Fehler
 %     \item ausgiebigere Tests; Sammeln von 40GB Video- und Bilddaten
@@ -393,7 +389,14 @@ Der Graph zeigt auch, dass ab $n = 3$ eine weitere Erhöhung von $n$ zu keiner s
 % -----------Milbenbekämpfung------------       1 - 2 Seiten ~ Albert, Daniel
 % ---------------------------------------
 \newpage
-\section{Milbenbekämpfung}
+\section{Umsetzung der Milbenbekämpfung}
+\subsection{Ideen zum Aufbau}
+
+\subsection{Erste Tests mit Lasern}
+
+\subsection{Darstellung der Ergebnisse auf einer Website}
+
+
 
 % ---------------------------------------
 % ------Fortsetzungsmöglichkeiten--------       1 - 2 Seiten ~ Albert
@@ -406,7 +409,7 @@ Der Graph zeigt auch, dass ab $n = 3$ eine weitere Erhöhung von $n$ zu keiner s
 % -------------Auswertung----------------           1 Seite ~ Alle
 % ---------------------------------------
 \newpage
-\section{Auswertung}
+\section{Zusammenfassung}
 
 % ---------------------------------------
 % ---------------Anhang------------------
@@ -418,6 +421,8 @@ Der Graph zeigt auch, dass ab $n = 3$ eine weitere Erhöhung von $n$ zu keiner s
     \centering
     \includegraphics[page=1, scale=.3]{images/TPZ_Cameras_Idea.pdf}
     \includegraphics[page=2, scale=.3]{images/TPZ_Cameras_Idea.pdf}    
+    \includegraphics[page=3, scale=.3]{images/TPZ_Cameras_Idea.pdf}    
+    \includegraphics[page=4, scale=.3]{images/TPZ_Cameras_Idea.pdf}    
     \caption{Unsere Abwägungen zu bewegbaren Kameras}
     \label{fig:moving_cameras_considerations}
 \end{figure}
@@ -464,11 +469,24 @@ Der Graph zeigt auch, dass ab $n = 3$ eine weitere Erhöhung von $n$ zu keiner s
 	\url{https://www.bee-careful.com/de/initiative/warum-sind-bienen-so-wichtig/}\\
 	letzter Zugriff: 11.10.2021
 
+\bibitem{link.springer.com} \bibLabel{wechselwarm}
+    \textsc{Harald Esch};
+    \textit{Über die Körpertemperaturen und den Wärmehaushalt von Apis mellifica}\\
+    \url{https://link.springer.com/article/10.1007/BF00298066}\\
+    letzter Zugriff: 15.12.2021
+
+\bibitem{ssh.com} \bibLabel{ssh}
+    \textsc{Tatu Ylonen};
+    \textit{SSH (Secure Shell) Home Page}\\
+    \url{https://www.ssh.com/academy/ssh}\\
+    letzter Zugriff: 17.12.2021
+
 \bibitem{udemy.com} \bibLabel{udemy}
 	\textsc{Portilla, Jose};
 	\textit{Python for Computer Vision with OpenCV and Deep Learning}\\
 	\url{https://www.udemy.com/course/python-for-computer-vision-with-opencv-and-deep-learning/}\\
 	letzter Zugriff: 23.04.2021
+
 
 \end{thebibliography}
 
