@@ -171,7 +171,7 @@ In China wurde die Milbe Varroa destructor erstmals 1958 auf einer Apis mellifer
 % $\rightarrow$ Mit Experimenten flexen\\
 
 \subsection{Aufbaumöglichkeiten der Varroaerkennung}
-Bevor wir mit dem Bau von Prototypen begannen, haben wir durch Brainstorming so viele Ideen wie möglich gesammelt.\\
+Wir starteten den Entwicklungsprozess mit einem Austausch unserer Vorstellungen. Durch ein Brainstorming trugen wir verschiedene Ideen, technische Ansätze und Anforderungen an das Milbenerkennungssystem zusammen. \\
 Ein erster Ansatz war, die Bienen mit Kameras zu filmen und somit die Milben optisch zu erkennen. Durch Anpassung der äußeren Bedingungen, wie Lichtverhältnisse, wollten wir die Erkennung so zuverlässig wie möglich gestalten.\\
 Eine weitere Idee beruht auf einer möglichen Wärmedifferenz zwischen Bienen und Milben: Wäre die Differenz der Körpertemperaturen nicht marginal, könnten wir beim Filmen mit Wärmebildkameras vermutlich Milben als warme bzw. kalte Punkte auf den Bienen erkennen. Diese Methode hätte allerdings beträchtliche Nachteile: Zum einen sind Infrarot-Kameras mit der von uns benötigten Auflösung sehr teuer. Unsere Varroamilbenerkennung würde also auch langfristig nicht preiswert sein und somit keine weitreichende Anwendung finden. Außerdem sind Bienen wechselwarm\bibRef{wechselwarm}. Die stark von der Außentemperatur abhängenden Schwankungen der Körperkerntemperatur würden wahrscheinlich zu Ungenauigkeiten und ungeahnten Problem bei der Milbenerkennung führen.\\
 Auch andere Möglichkeiten, die wir in Betracht zogen, hatten große Nachteile oder waren mit unseren Mitteln nicht umsetzbar. Also kamen wir zu dem Schluss, das Erkennen der Milben mit Kameras durchzuführen.\\
@@ -241,13 +241,19 @@ Wir konnten Programme starten, die Ergebnisse einsehen und sogar die Software ä
 % \end{tabular}
 % \end{center}
 
-\subsection{Bau und Verbesserung von Prototypen}
-% Bereits im Herbst 2020 haben wir mit dem Bau erster Prototypen begonnen. Diese waren nicht besonders funktional. Die einzige Funktion war es, erste Fehlerquellen ausfündig zu machen. Wären die Bienen beispielsweise von der Technik oder dem Vorbau am Bienenstockeingang gestört worden, hätten wir diese grundsätzlichen Probleme bereits frühzeitig entdeckt.\\
-% Die in diesem Protoyp verbaute Rechentechnik ist ein Raspberry Pi, ein sehr beliebter Einplatinencomputer. Als Kamera haben wir das zugehörige Kameramodul ,,Raspberry Pi Camera V2'' verbaut. Diese hat eine Auflösung von 8 Megapixel, der Sensorbereich ist allerdings sehr klein, was sich negativ auf die Bildqualität auswirkt. Das Modul ist sehr beginnerfreundlich und ist vergleichsweise preiswert. Für erste Tests war dieses Modul also ausreichend, ließ allerdings noch Verbesserungsmöglichkeiten offen.
+\subsection{Bau und Verbesserung der Prototypen}
+Bereits im Herbst 2020 haben wir mit dem Bau erster Prototypen begonnen. Unser Ziel dabei war, Fehlerquellen schnell ausfündig zu machen. Wären die Bienen beispielsweise von der Technik oder dem Vorbau am Bienenstockeingang generell gestört wären, hätten wir dieses grundsätzliche Problem bereits frühzeitig entdeckt. Um den Aufwand für diese Tests gering zu halten, überwachten wir mit den Modellen voerst nur einen kleinen Teil des Flugbretts (siehe Anhang Seite ???).\\
+Im späten Herbst wird der Bienenstockeingang vom Imker sowieso auf ein kleines Flugloch verkleinert, um ein Volk vor Wespen oder auch anderen, räubernden Bienen zu schützen \bibRef{flugloch}. Insofern benötigten wir anfangs gar keine Überwachung des gesamten Flugbretts.\\
+Auch die in diesen Protoypen verbaute Rechentechnik war noch nicht an unsere speziellen Anforderungen angepasst. Für Datenbeschaffung und -verarbeitung verwendeten wir ein Raspberry Pi. Das ist Einplatinencomputer, der besonders in der Maker-Community äußerst beliebt ist. Als Kamera haben wir das von der Raspberry Pi Foundation herausgegebene, zugehörige Kameramodul ,,Raspberry Pi Camera V2'' verbaut. Diese hat eine Auflösung von 8 Megapixel. Der Sensorbereich ist allerdings sehr klein, was sich negativ auf die Bildqualität auswirkt. Außerdem ist das Modul ist beginnerfreundlich und vergleichsweise preiswert.\\
+% Luxacryl als Abtrennung von Kamera zu Bienen
+Für erste Tests war mittlere Bildqualität also ausreichend. Wir wollten schließlich vorerst die Reaktion der Bienen auf angebaute Technik beobachten. Wir kamen zu dem Resultat, dass Bienen nicht generell von einem 3D-gedruckten Anbau gestört sind - jedenfalls nicht von den kleineren Modellen, die wir anfangs entwickelten.\\
+Wie die Kamerabilder, siehe Anhang Seine ???, zeigen, gabe es noch einige Verbesserungsmöglichkeiten. Auch haben wir zu diesem Zeitpunkt noch keine Milben entdecken können. Nächste Schritte waren also, den überwachten Bereich auf das gesamte Flugbrett auszuweiten und die Foto- und Videoqualität zu verbessern.\\
+
 
 
 
 % ----- Zweiter Protoyp ---------
+% In einer nächsten Generation von Testmodellen weiteten wir die Beobachtung auf das gesamte Flugbrett aus.
 % \begin{itemize}
 %     \item groß -> überblickt gesamtes Flugbrett
 %     \item mit Technik, die wir langfristig nutzen wollen:
@@ -510,6 +516,12 @@ Aus Abbildung \autoref{fig:m2} geht darüber hinaus hervor, dass ab $k = 3$ eine
 	\textit{Videokompression Grundlagen}\\
 	\url{https://kompendium.infotip.de/grundlagen_videokompression.html/}\\
 	letzter Zugriff: 17.09.2021
+
+\bibitem{beeventure.de} \bibLabel{flugloch}
+    \textsc{Karl Weiß};
+    \textit{Flugloch}\\
+    \url{http://www.beeventure.de/imkerei/beuten/flugloch.html}\\
+    letzter zugriff: 18.12.2021
 
 \end{thebibliography}
 
