@@ -180,6 +180,7 @@ Der erste der beiden Ansätze hatte den großen Vorteil, dass die Auflösung der
 Neben den theoretischen Überlegungen führten wir außerdem Tests mit Servomotoren durch. In einem einfachen, 3D-gedruckten Versuchsaufbau testeten wir wie schnell die Kamera auf beliebige Stellen des Flugbretts geschwenkt werden kann (siehe Anhang S. ???). Die Versuche ergaben, dass wir pro Sekunde etwa eine Biene untersuchen könnten. Natürlich ließe sich diese Rate verbessern. Angesichts der Anforderung im Sommer bis zu als 20 Bienen pro Sekunde erkennen zu können, häuften sich die Argumente trotz dessen gegen diese Idee. Bei Abschätzungen der Kosten, Geschwindigkeitslimitierenden Faktoren, Lautstärke und Wartungsaufwand des Systems entschieden wir uns schließlich ganz gegen diesen Ansatz.\\
 Das zweite Konzept ist in der Umsetzung rein vom Versuchsaufbau um einiges leichter. Trotzdem mussten wir vor der Umsetzung einige Optionen abwägen. Beispielsweise mussten wir entscheiden, ob viele billige Kameras, die jeweils nur einen kleinen Bereich des Flugbretts überwachen oder wenige Kameras mit einer sehr hohen Bildqualität und Auflösung bessere Resultate erzielen werden. Wir kamen zu dem Ergebnis, dass das zweitere die bessere Option ist. Unsere Überlegungen dazu sind im Anhang auf Seite ??? nachzuvollziehen.\\
 Eine weitere, besonders schwierige Frage, die sich uns stellte, war, ob wir neben der Oberseite auch die Unterseite der Bienen durch Kameras untersuchen sollten. Dazu wären mehr Kameras nötig und das Flugbrett müsste aus einem durchsichtigem Material, zum Beispiel Plexiglas, sein. 	Aufgrund des ungemein größeren Aufwands, der großen Veränderung des Einflugbereichs von den Bienen und der Tatsache, dass Milben hauptsächlich auf dem Rücken der Bienen sitzen haben wir uns gegen weitere Kameraperspektiven.\\
+Schlussendlich war unsere gewünschte Kamerakonfiguration wie folgt: Zwei Kameras filmen jeweils eine Hälfte des Flugbretts zentral von oben. Nur in der Mitte des Brettes überlappen sich die Bilder etwas.
 
 \subsection{Experimente zur Optimierung der Fotoqualität}
 Um Varroamilben möglichst zuverlässig auf Bienen zu erkennen, muss der Kontrast zwischen Milbe und Biene so ausgeprägt wie möglich sein. Durch Durchführung systematischer Experimente haben wir die Rahmenbedingungen für ein solches Optimum so präzise wie möglich festgestellt.\\
@@ -247,35 +248,25 @@ Im späten Herbst wird der Bienenstockeingang vom Imker sowieso auf ein kleines 
 Auch die in diesen Protoypen verbaute Rechentechnik war noch nicht an unsere speziellen Anforderungen angepasst. Für Datenbeschaffung und -verarbeitung verwendeten wir ein Raspberry Pi. Das ist Einplatinencomputer, der besonders in der Maker-Community äußerst beliebt ist. Als Kamera haben wir das von der Raspberry Pi Foundation herausgegebene, zugehörige Kameramodul ,,Raspberry Pi Camera V2'' verbaut. Diese hat eine Auflösung von 8 Megapixel. Der Sensorbereich ist allerdings sehr klein, was sich negativ auf die Bildqualität auswirkt. Außerdem ist das Modul ist beginnerfreundlich und vergleichsweise preiswert.\\
 % Luxacryl als Abtrennung von Kamera zu Bienen
 Für erste Tests war mittlere Bildqualität also ausreichend. Wir wollten schließlich vorerst die Reaktion der Bienen auf angebaute Technik beobachten. Wir kamen zu dem Resultat, dass Bienen nicht generell von einem 3D-gedruckten Anbau gestört sind - jedenfalls nicht von den kleineren Modellen, die wir anfangs entwickelten.\\
-Wie die Kamerabilder, siehe Anhang Seine ???, zeigen, gabe es noch einige Verbesserungsmöglichkeiten. Auch haben wir zu diesem Zeitpunkt noch keine Milben entdecken können. Nächste Schritte waren also, den überwachten Bereich auf das gesamte Flugbrett auszuweiten und die Foto- und Videoqualität zu verbessern.\\
+Wie die Kamerabilder, siehe Anhang Seine ???, zeigen, gabe es noch einige Verbesserungsmöglichkeiten. Auch haben wir zu diesem Zeitpunkt noch keine Milben entdecken können. Nächste Schritte waren also, den überwachten Bereich auf das gesamte Flugbrett auszuweiten und die Foto- und Videoqualität zu steigern.\\
+Das waren die Hauptziele unserer nächsten Prototypen. In einer neuen Generation begannen wir von Grund auf neu. Besonders die Wahl der elektronischen Komponenten überdachten wir in diesem Schritt. Wir ersetzten das Raspberry Pi durch ein für unseren Anwendungszweck passenderes Board, ein Jetson Nano. Dabei handelt es sich um einen für den Preis und den Stromverbrauch sehr leistungsstarken Einplatinencomputer. NVIDIA entwickelte dieses Board speziell für kleinen, energieeffiziente KI-Systeme. Auf dem Board können mehrere Neuonale Netze gleichzeitig ausgeführt und verwaltet werden\bibRef{jetson-nano}.\\
+% 472 Gigaflops
+Außerdem hat das Jetson Nano zwei Anschlüsse für Kameras. Das erleichtert das Auslesen der Kamera wesentlich. Denn ohne native Unterstützung des Minicomputers für mehrere Kameras hätten wir Erweiterungsboards kaufen müssen. Rezensionen zufolge ist das Ansteuern darüber allerdings aufwendig und Datenübertragungsraten werden verschlechtert.\\
+% Kameras
+% Beleuchtung
+Anstatt einen kleinen Überbau auf das Flugbrett zu setzen, entschieden wir uns dieses ganz durch einen eigenen Vorbau zu ersetzen. So konnten wir die Maße, Oberflächenbeschaffenheit und Farbe des Flugbretts leichter bestimmen. Zudem ermöglichte diese Herangehensweise einen modularen Aufbau unseres Systems: Durch eine Steckverbindung kann unser Vorbau schnell an beziehungsweise von der Beute abgebaut werden. Im Anhang auf Seite ??? ist zu sehen, wie wir den Steckmechanismus umgesetzt haben.\\
+Diesen Mechanismus und weitere Eckverbindungen druckten wir mit unserem 3D-Drucker. Die Seitenwände sägten wir dagegen aus Sperrholz, um eine übermäßig lange Druckzeit zu vermeiden und Filament zu sparen.
+% Bild für bessere, strukturiertere Beschreibung
+Bei den Praxistests zeigten sich schnell die Schwachstellen unseres Designs:\\
+Ein riesiges Problem war, dass die Bienen das Flugloch nicht mehr zuverlässig fanden. Aufgrund des langen Vorbaus suchten sie Abkürzungen und versuchten, unsere Konstruktion zu umgehen. Auch landeten sie auf dem Dach unseres Prototypen. Aufgrund der Ähnlichkeiten zu einem Flugbrett haben die Bienen dieses offenbar mit dem Eingang verwechselt. Weiterhin wurden die Bienen von schwarzem Isolierband, das wir verbaut hatten, irritiert. Vermutlich haben sie auch dieses, wegen der schwarzen Farbe und der rechteckigen Form, für einen Eingang zum Bienenstock gehalten. Zum Zeitpunkt unsers Tests flogen, im Gegensatz zu unseren ersten Versuchen, einige Bienen. Nach kurzer Zeit hatte sich eine Bienentraube am Bienenstock angestaut (siehe Anhang Seite ???). Deshalb mussten wir den Versuch vorzeitig abbrechen.\\
+Beim Abbauen wurde darüber hinaus ersichtlich, dass einige wenige Bienen in den abgeschlossenen Raum, zur Elektronik krabbeln konnten. Wir hatten beim Bau des zweiten Protoypen die Rückwand nicht durch eine zusätzliche Sperrholzplatte abgedeckt. Der Bienenkasten sollte planweise dicht mit der Rückwand an der Beute anliegen und somit alle Bienen abhalten. Wir haben die Agilität der Bienen stark unterschätzt.\\
+Ein weiteres Problem zeigte sich bei späteren Tests dieses Prototypen. Das Plexiglas, das die Bienen von der Elektronik trennt, wirkte sich negativ auf die Bildqualität aus. Zum einen gab es Reflexionen, die durch teilweises Zurückwerfen der Beleuchtung verursacht wurden. Zum anderen sammelte sich Morgentau auf der Platte und verdeckte Teile der Sicht. Erst im Laufe des Tages verdunstete das Wasser wieder.
 
+All diese Probleme versuchten wir in einem dritten Prototyp zu lösen. Wichtig, damit der Vorbau von den Bienen angenommen wird, war die vorgebaute, zusätzliche Länge des Flugebretts zu minimieren. Durch ein kompakteres Design konnten wir diese Länge von 22cm auf 8cm reduzieren. Die Benutzung von schwarzem Isolierband vermieden wir hier komplett. Zudem war bei dieser Version eine Rückwand vorgesehen, sodass die Elektronik vollständig von den Bienen geschützt ist.\\
+Den Tau und die Reflexionen konnten wir loswerden, indem wir die Plexiglasscheibe wegließen. Stattdessen ragen dei Objektive der Kameras direkt in den für Bienen zugänglichen Bereich (siehe Anhang Seite ???). Ursprünglich sollte diese Option nur eine Notlösung darstellen. Praxiserfahrengen zeigten aber, dass Bienen nur äußerst selten im beängten Raum des Vorbaus fliegen.\\
+Mit diesen Änderungen konnten wir also alle großen Mängel beheben. Der neue Prototyp wurde von den Bienen ohne weitere Probleme angenommen. Unter \url{https://semi.dcermann.de/project} ist das auf einem Video gut zu erkennen. Jetzt konnten wir auch umfangreichere Daten für das Erstellen und Trainieren eines trainingsbasierten Milbenerkennungsalgorithmus sammeln. Dafür filmten wir über eine Woche verteilt zu unterschiedlichen Tageszeiten das Flugbrett. Insgesamt speicherten wir über 40GB Bild- und Videomaterial.\\
+% weitere Verbesserungsmöglichkeiten: Bildqualität; mehr Winkel
 
-
-
-% ----- Zweiter Protoyp ---------
-% In einer nächsten Generation von Testmodellen weiteten wir die Beobachtung auf das gesamte Flugbrett aus.
-% \begin{itemize}
-%     \item groß -> überblickt gesamtes Flugbrett
-%     \item mit Technik, die wir langfristig nutzen wollen:
-%     \begin{itemize}
-%         \item Jetson Nano, 2 x ?MP MIPI Camera, 940nm Led-Strips
-%     \end{itemize}
-%     \item kurze Tests, mussten wir allerdings abbrechen (wegen einigen Fehlerquellen)
-%     \item Fehlerquellen
-%     \begin{enumerate}
-%         \item Bienen akzeptieren Flugbrett nicht
-%         \item Spiegelungen in Plexiglas, das Bienen von Kameras trennt
-%         \item super vieeel anderer kram
-%     \end{enumerate}
-% \end{itemize}
-
-
-
-% ------ Dritter Protoyp --------
-% \begin{itemize}
-%     \item Ausbesserungen der meisten Fehler
-%     \item ausgiebigere Tests; Sammeln von 40GB Video- und Bilddaten
-% \end{itemize}
 
 % ---------------------------------------
 % --------------Software-----------------           4 Seiten ~ Richard
@@ -404,9 +395,9 @@ Aus Abbildung \autoref{fig:m2} geht darüber hinaus hervor, dass ab $k = 3$ eine
 \section{Umsetzung der Milbenbekämpfung}
 \subsection{Ideen zum Aufbau}
 
-\subsection{Erste Tests mit Lasern}
+\subsection{Durchführung erste Versuche mit Lasern}
 
-\subsection{Darstellung der Ergebnisse auf einer Website}
+% \subsection{Darstellung der Ergebnisse auf einer Website} -> nehmen wir nur ausführlich, falls wir noch Platz füllen müssen
 
 
 
@@ -522,6 +513,12 @@ Aus Abbildung \autoref{fig:m2} geht darüber hinaus hervor, dass ab $k = 3$ eine
     \textit{Flugloch}\\
     \url{http://www.beeventure.de/imkerei/beuten/flugloch.html}\\
     letzter zugriff: 18.12.2021
+
+\bibitem{nvidia.com} \bibLabel{jetson-nano}
+    \textsc{Autor Unbekannt}M
+    \textit{NVIDIA Jetson Nano}\\
+    \url{https://www.nvidia.com/de-de/autonomous-machines/embedded-systems/jetson-nano/}\\
+    letzter Zugriff: 18.12.2021
 
 \end{thebibliography}
 
