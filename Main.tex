@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage[T1]{fontenc}
+\usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -11,7 +12,6 @@
 \usepackage{tabularx}
 \usepackage{blindtext}
 \usepackage{hyphenat}
-\usepackage{hyperref}
 \usepackage{nameref}
 \usepackage{float}
 \usepackage{pgfplots}
@@ -173,12 +173,12 @@ In China wurde die Milbe Varroa destructor erstmals 1958 auf einer Apis mellifer
 \subsection{Aufbaumöglichkeiten der Varroaerkennung}
 Wir starteten den Entwicklungsprozess mit einem Austausch unserer Vorstellungen. Durch ein Brainstorming trugen wir verschiedene Ideen, technische Ansätze und Anforderungen an das Milbenerkennungssystem zusammen. \\
 Ein erster Ansatz war, die Bienen mit Kameras zu filmen und somit die Milben optisch zu erkennen. Durch Anpassung der äußeren Bedingungen, wie Lichtverhältnisse, wollten wir die Erkennung so zuverlässig wie möglich gestalten.\\
-Eine weitere Idee beruht auf einer möglichen Wärmedifferenz zwischen Bienen und Milben: Wäre die Differenz der Körpertemperaturen nicht marginal, könnten wir beim Filmen mit Wärmebildkameras vermutlich Milben als warme bzw. kalte Punkte auf den Bienen erkennen. Diese Methode hätte allerdings beträchtliche Nachteile: Zum einen sind Infrarot-Kameras mit der von uns benötigten Auflösung sehr teuer. Unsere Varroamilbenerkennung würde also auch langfristig nicht preiswert sein und somit keine weitreichende Anwendung finden. Außerdem sind Bienen wechselwarm\bibRef{wechselwarm}. Die stark von der Außentemperatur abhängenden Schwankungen der Körperkerntemperatur würden wahrscheinlich zu Ungenauigkeiten und ungeahnten Problem bei der Milbenerkennung führen.\\
+Eine weitere Idee beruht auf einer möglichen Wärmedifferenz zwischen Bienen und Milben: Wäre die Differenz der Körpertemperaturen gut messbar, könnten wir beim Filmen mit Wärmebildkameras vermutlich Milben als warme bzw. kalte Punkte auf den Bienen erkennen. Diese Methode hätte allerdings beträchtliche Nachteile: Zum einen sind Infrarot-Kameras mit der von uns benötigten Auflösung sehr teuer. Unsere Varroamilbenerkennung würde also auch langfristig nicht preiswert sein und somit keine weitreichende Anwendung finden. Außerdem sind Bienen wechselwarm\bibRef{wechselwarm}. Die stark von der Außentemperatur abhängenden Schwankungen der Körperkerntemperatur würden wahrscheinlich zu Ungenauigkeiten und ungeahnten Problem bei der Milbenerkennung führen.\\
 Auch andere Möglichkeiten, die wir in Betracht zogen, hatten große Nachteile oder waren mit unseren Mitteln nicht umsetzbar. Also kamen wir zu dem Schluss, das Erkennen der Milben mit Kameras durchzuführen.\\
-Nach unserer ersten Abwägung von Ideen war der nächste Schritt, das Scannen der Bienen konzeptionell zu planen. Alle unserer Überlegungen beruhten dabei auf einem von zwei grundsätzlichen Ansätzen: Entweder jede Biene wird durch Bewegung der Kamera bzw. Veränderung des Zooms einzeln fokussiert und anschließend auf Varroen gescannt oder eine Kamera ist statisch und überwacht gleichzeitig mehrere Bienen aus ihrem Sichtfeld. Eine konzeptionelle Gegenüberstellungen der beiden Möglichkeiten ist in Abbildung ? (Anhang Seite ?) zu erkennen. Bei der Entscheidung für eine Herangehensweise, mussten wir Klarheit und Auflösung der Bilder gegen Kosten und Aufwand abwägen.\\
-Der erste der beiden Ansätze hatte den großen Vorteil, dass die Auflösung der fotografierten Biene höher wäre. Versuche von uns haben gezeigt, dass ein kleinerer Abstand der Kamera zur Biene für die Bildqualität und somit auch für die Varroaerkennung, unabhängig von der verbesserten Auflösung, förderlich ist. Allerdings brächte man für eine Durchführung dieser Idee in jedem Fall mechanische Vorrichtungen. Die Skizze einer möglichen Umsetzung mit auf linearen Achsen montierten Spiegeln ist im Anhang auf Seite ???? zu erkennen.\\
-Neben den theoretischen Überlegungen führten wir außerdem Tests mit Servomotoren durch. In einem einfachen, 3D-gedruckten Versuchsaufbau testeten wir wie schnell die Kamera auf beliebige Stellen des Flugbretts geschwenkt werden kann (siehe Anhang S. ???). Die Versuche ergaben, dass wir pro Sekunde etwa eine Biene untersuchen könnten. Natürlich ließe sich diese Rate verbessern. Angesichts der Anforderung im Sommer bis zu als 20 Bienen pro Sekunde erkennen zu können, häuften sich die Argumente trotz dessen gegen diese Idee. Bei Abschätzungen der Kosten, Geschwindigkeitslimitierenden Faktoren, Lautstärke und Wartungsaufwand des Systems entschieden wir uns schließlich ganz gegen diesen Ansatz.\\
-Das zweite Konzept ist in der Umsetzung rein vom Versuchsaufbau um einiges leichter. Trotzdem mussten wir vor der Umsetzung einige Optionen abwägen. Beispielsweise mussten wir entscheiden, ob viele billige Kameras, die jeweils nur einen kleinen Bereich des Flugbretts überwachen oder wenige Kameras mit einer sehr hohen Bildqualität und Auflösung bessere Resultate erzielen werden. Wir kamen zu dem Ergebnis, dass das zweitere die bessere Option ist. Unsere Überlegungen dazu sind im Anhang auf Seite ??? nachzuvollziehen.\\
+Nach unserer ersten Abwägung von Ideen war der nächste Schritt, das Scannen der Bienen konzeptionell zu planen. Alle unserer Überlegungen beruhten dabei auf einem von zwei grundsätzlichen Ansätzen: Entweder jede Biene wird durch Bewegung der Kamera bzw. Veränderung des Zooms einzeln fokussiert und anschließend auf Varroen gescannt oder eine Kamera ist statisch und überwacht gleichzeitig mehrere Bienen aus ihrem Sichtfeld. Bei der Entscheidung für eine Herangehensweise, mussten wir Klarheit und Auflösung der Bilder gegen Kosten und Aufwand abwägen.\\
+Der erste der beiden Ansätze hatte den großen Vorteil, dass die Auflösung der fotografierten Biene höher wäre. Versuche von uns haben gezeigt, dass ein kleinerer Abstand der Kamera zur Biene für einen hohen Kontrast der Milben sorgt und somit auch für die Varroaerkennung, unabhängig von der verbesserten Auflösung, förderlich ist. Allerdings brächte man für eine Durchführung dieser Idee in jedem Fall mechanische Vorrichtungen. Die Skizze einer möglichen Umsetzung mit auf linearen Achsen montierten Spiegeln ist im Anhang auf Seite \pageref*{fig:technical-sketch} \, zu erkennen.\\
+Neben den theoretischen Überlegungen führten wir außerdem Tests mit Servomotoren durch. In einem einfachen, 3D-gedruckten Versuchsaufbau testeten wir wie schnell die Kamera auf beliebige Stellen des Flugbretts geschwenkt werden kann (siehe Anhang S. \pageref*{fig:mechanics-test}\,). Die Versuche ergaben, dass wir pro Sekunde etwa eine Biene untersuchen könnten. Natürlich ließe sich diese Rate verbessern. Angesichts der Anforderung im Sommer bis zu als 20 Bienen pro Sekunde erkennen zu können, häuften sich die Argumente trotz dessen gegen diese Idee. Bei Abschätzungen der Kosten, Geschwindigkeitslimitierenden Faktoren, Lautstärke und Wartungsaufwand des Systems entschieden wir uns schließlich ganz gegen diesen Ansatz.\\
+Das zweite Konzept ist in der Umsetzung rein vom Versuchsaufbau um einiges leichter. Trotzdem mussten wir vor der Umsetzung einige Optionen abwägen. Beispielsweise mussten wir entscheiden, ob viele billige Kameras, die jeweils nur einen kleinen Bereich des Flugbretts überwachen oder wenige Kameras mit einer sehr hohen Bildqualität und Auflösung bessere Resultate erzielen werden. Wir kamen zu dem Ergebnis, dass das zweitere die bessere Option ist. Unsere Überlegungen dazu sind im Anhang auf Seite \pageref*{fig:moving-cameras-considerations} \, nachzuvollziehen.\\
 Eine weitere, besonders schwierige Frage, die sich uns stellte, war, ob wir neben der Oberseite auch die Unterseite der Bienen durch Kameras untersuchen sollten. Dazu wären mehr Kameras nötig und das Flugbrett müsste aus einem durchsichtigem Material, zum Beispiel Plexiglas, sein. 	Aufgrund des ungemein größeren Aufwands, der großen Veränderung des Einflugbereichs von den Bienen und der Tatsache, dass Milben hauptsächlich auf dem Rücken der Bienen sitzen haben wir uns gegen weitere Kameraperspektiven.\\
 Schlussendlich war unsere gewünschte Kamerakonfiguration wie folgt: Zwei Kameras filmen jeweils eine Hälfte des Flugbretts zentral von oben. Nur in der Mitte des Brettes überlappen sich die Bilder etwas.
 
@@ -201,9 +201,9 @@ Bei unseren Untersuchten beschränkten wir uns speziell auf die optimale Helligk
 	% \caption{Testbilder bei verschiedenen Wellenlängen}
 \end{figure}
 \noindent
-Die Ergebnisse unserer Versuche bezüglich der optimalen Wellenlänge der Beleuchtung waren eindeutig. Die Milben sind bei Licht mit einer besonders hohen Wellenlänge am besten zu erkennen (siehe Abbildung ???). Bei grünem, orangenem und hellrotem Licht ist der Parasit nur umrissartig oder sogar gar nicht zu erkennen. Im starken Gegensatz dazu hebt sich die Milbe bei dunkelrotem und infrarotem Licht stark als weißer Fleck auf der Biene ab.\\
-Die Wellenlänge sollte also zwischen 900 nm und 950 nm liegen, was kurzwelligem Infrarotlicht entspricht\footnote{\url{https://www.heizstrahler-direkt.de/blog/ir-heizstrahler-die-drei-verschiedenen-strahlungstypen/}}. Höher darf die Wellenlänge der Beleuchtung nicht sein. Denn gängige Fotosensoren, Objektive und Linsen sind für sichtbares Licht optimiert. Außerhalb eines Toleranzbereiches bräuchten wir für scharfe Bilder spezielle, teure Optik.\\
-Infrarotes Licht wird zudem von Bienen nicht gesehen. Bienen nehmen nämlich Licht nur bis zu einer Wellenlänge von etwa 650nm wahr\footnote{\url{https://honeybeehq.com/how-do-bees-see-the-world-this-is-their-superpower/}}. Im Anhang auf S. ??? ist das für Bienen sichtbare Spektrum zu sehen. Eine Beleuchtung mit Infrarotem Licht können wir also benutzen, ohne die Bienen einzuschränken.\\
+Die Ergebnisse unserer Versuche bezüglich der optimalen Wellenlänge der Beleuchtung waren eindeutig. Die Milben sind bei Licht mit einer besonders hohen Wellenlänge am besten zu erkennen (siehe Abbildung \ref*{fig:experiment} \,) Bei grünem, orangenem und hellrotem Licht ist der Parasit nur umrissartig oder sogar gar nicht zu erkennen. Im starken Gegensatz dazu hebt sich die Milbe bei dunkelrotem und infrarotem Licht stark als weißer Fleck auf der Biene ab.\\
+Die Wellenlänge sollte also zwischen 900 nm und 950 nm liegen, was kurzwelligem Infrarotlicht entspricht. Höher darf die Wellenlänge der Beleuchtung nicht sein. Denn gängige Fotosensoren, Objektive und Linsen sind für sichtbares Licht optimiert. Außerhalb eines Toleranzbereiches bräuchten wir für scharfe Bilder spezielle, teure Optik.\\
+Infrarotes Licht wird zudem von Bienen nicht gesehen. Bienen nehmen nämlich Licht nur bis zu einer Wellenlänge von etwa 650nm wahr. Im Anhang auf S. \pageref*{fig:bee-vision} \, ist das für Bienen sichtbare Spektrum zu sehen. Eine Beleuchtung mit Infrarotem Licht können wir also benutzen, ohne die Bienen einzuschränken.\\
 Bei den Experimenten zum Untergrund ergab sich, dass Reflexionen und Streuungen des Lichts den Kontrast zwischen Milbe und Biene verschlechtern. Der beste Untergrund sollte somit schwarz sein und möglichst wenig reflektieren.
 % nicht so aprupt abbrechen
 
@@ -212,15 +212,15 @@ Bei den Experimenten zum Untergrund ergab sich, dass Reflexionen und Streuungen 
 % --------------Prototype----------------           3 Seiten ~ Daniel
 % ---------------------------------------
 \newpage
-\section{Entwicklung und Verbesserung verschiedener Prototypen}
+\section{Entwicklung und Verbesserung verschiedener Prototypen} \label{section:Prototypen}
 \subsection{Angewandte Arbeitsmethoden}
-Die wohl wichtigste von uns angewandte Arbeitsmethode ist das Rapid-Prototyping. Diese Arbeitsmethode ist ein Verfahren zum Annähern an angestrebte Ergebnisse mittels aufwandsarmer, günstiger Testversionen\footnote{https://www.businessinsider.de/gruenderszene/lexikon/begriffe/prototyping/}. Wir kamen durch den Bau unserer Prototypen und durch das ständige Ausbessern von Fehlern unserem Ziel, einer immer funktionalen Milbenerkennung, immer näher. Unwichtige Details und ablenkende, kleinere Probleme können bei diesem Prozess vorerst ignoriert werden. Der Fokus auf die wesentlichen Herausforderung kann somit bei der Entwicklung erhalten bleiben. Wir haben beispielsweise Witterungsbeständigkeit erst bei späteren Versionen und Kostenoptimierung bisher gar nicht beachtet.\\
+Die wohl wichtigste von uns angewandte Arbeitsmethode ist das Rapid-Prototyping. Diese Arbeitsmethode ist ein Verfahren zum Annähern an angestrebte Ergebnisse mittels aufwandsarmer, günstiger Testversionen \bibRef{protoyping}. Wir kamen durch den Bau unserer Prototypen und durch das ständige Ausbessern von Fehlern unserem Ziel, einer immer funktionalen Milbenerkennung, immer näher. Unwichtige Details und ablenkende, kleinere Probleme können bei diesem Prozess vorerst ignoriert werden. Der Fokus auf die wesentlichen Herausforderung kann somit bei der Entwicklung erhalten bleiben. Wir haben beispielsweise Witterungsbeständigkeit erst bei späteren Versionen und Kostenoptimierung bisher gar nicht beachtet.\\
 Prototyping ist bei unserem Projekt besonders nützlich, da bei der Arbeit mit Bienen viele Fehlerquellen sehr schwer vorhersehbar sind. Einige Verhaltensweisen der Bienen, vor allem Reaktionen auf Änderungen ihrer Umgebung, sind sehr ungewöhnlich. Bei einem unserer frühen Versionen hatten wir einen zu großen Kasten vor den Eingang des Bienenstocks gebaut. Daraufhin haben die Bienen das Flugloch nicht mehr gefunden und haben sich stattdessen auf dem Flugbrett-ähnlichen Dach unseres Prototypen gesammelt. Hätten wir unser Produkt ausschließlich theoretisch durchgeplant und nicht frühzeitig getest, wären Fehler, wie dieser erst sehr spät aufgefallen.\\
 Wir wussten zu Beginn unserer Arbeiten nicht, wie genau ein mögliches Endprodukt aussehen könnte. Durch das Herstellen von Prototypen konnten wir auch alle unsere Lösungsansätze testen. Wir konnten sehr viele vage Ideen schnell umsetzen und immer weiter konkretisieren.\\
 Für diese Arbeitsweise war das Arbeiten mit den uns zur Verfügung stehenden 3D-Druckern sehr unersetzbar. Die Kombination aus einem Drucker und Computer-gestütztem Design ermöglichte sehr schnelle Umsetzung von Ideen. Wir nutzten das CAD-Programm ,,Autodesk Fusion 360''. Dieses ist auch für umfangreichere Projekte geeignet und bietei vielseitige Werkzeuge, wie das Simulieren physikalischer Eigenschaften schon vor dem Druck, was den Entwicklungsprozess stark vereinfacht. \\
 Schnelles Feetback bekamen wir auch, weil wir direkten Zugriff zu mehreren Bienenvölkern hatten. Dadurch konnten wir auch dynamischer auf entstehender Probleme reagieren und schon früh besonders schwer umzusetztende Ansätze identifizieren.
 
-\subsection{Technische Grundlagen}
+\subsection{Technische Grundlagen} 
 Bevor wir überhaupt die Möglichkeit hatten, Prototypen zu bauen und zu testen, mussten einige Grundgegeben sichergestellt werden.\\
 Zum einen brauchten wir eine stabile Stromquelle für Langzeittests. Denn bei den uns zur Verfügung stehenden Bienenkästen ist keine Zugang zum Stromnetz möglich. Eine zuverlässige Stromversorgung zu gewährleisten ist in unserem Fall eine große Herausforderung und war anfangs lange Zeit eine Fehlerquelle von einigen Problemen. Denn die bereitzustellende Leistung ist Zeitweise, immer wenn gerade eine Milbe erkannt wurde, sehr groß. Zu dem ständigen Stromverbrauch des Einplatinencomputers, der Kameras und der Beleuchtung kommen bei der Entdeckung einer Varroamilbe die Last von zwei Servo-Motoren, einem Laser und einer Festplatte zum Aufzeichnen der Daten. So können unseren Abschätzungen zufolge temporär bis zu 20W benötigt werden. Da alle gängigen Einplatinencomputer mit einer Eingangsspannung von $U_{Ges} = 5V$ arbeiten, ist der fließende Strom beträchtlich:
 $$ P = U_{Ges} \cdot I \Longleftrightarrow I = \dfrac{P}{U_{Ges}} \approx \dfrac{20W}{5V} = 4A$$
@@ -228,8 +228,8 @@ Bei so einer hohen Stromstärke geht selbst bei kleinem Innenwiderstand der Kabe
 $$R_i = \dfrac{U_i}{I} \Longleftrightarrow U_i = R_i \cdot I \approx 0.1\varOmega \cdot 4A = 0.4V$$
 abfallen. Das bedeutet auch, dass ein zu niedrige Versorgungsspannung an den Komponenten unseres Aufbaus ankommt und unvorhersehbare Effekte auslöst. Das Jetson Nano, das schließich von uns gewählte Baord zur Auswertung der Kamerabilder, drosselt beispielsweise die Rechenleistung oder schaltet bei zu niedrigen Eingangsspannungen das Board ganz ab.\\
 Nachdem wir die Spannungsversorgung als Fehlerquelle identifizert hatten, konnten wir durch Verbesserung aller Löt- und Steckverbindungen das beschriebene Problem beseitigen. 
-Als Energiespeicher brauchten benutzen wir eine alte Autobatterie. Mit einer Spannung von 12V und einer Kapazität von etwa 50 Amperestunden sollte diese bei einem durchschnittlichem Verbrauch von höchstens 15W länger als 40 Stunden halten. Die Batterie wir durch eine 20W Solarzelle aufgeladen. Außerdem wird die 12 Volt Ausgangsspannung der Batterie durch einen Spannungswandler auf die für von Einplatinencomputer benötigten 5 Volt heruntergewandelt. Der gesamte Aufbau der Stromversorgung ist im Anhang auf Seite ??? zu erkennen.\\
-Eine weitere Grundvorraussetzung für leichten und schnellen Zugriff auf den \productName \ st es, eine WLAN-Verbindung im Garten herstellen. Besonders für den Entwicklungsprozess ist es wichtig, ohne physische Verbindung auf das Board zugreifen zu können. Auf diese Weise konnten wir per SSH-Verbindung auf den Einplatinencomputer zugreifen. SSH, kurz für ,,Secure Shell'', ist ein kryptographisches Protokoll durch das Entwickler Zugang zu Kommandozeilen von entfernten Servern oder Computern erhalten \bibRef{ssh}.\\
+Als Energiespeicher brauchten benutzen wir eine alte Autobatterie. Mit einer Spannung von 12V und einer Kapazität von etwa 50 Amperestunden sollte diese bei einem durchschnittlichem Verbrauch von höchstens 15W länger als 40 Stunden halten. Die Batterie wir durch eine 20W Solarzelle aufgeladen. Außerdem wird die 12 Volt Ausgangsspannung der Batterie durch einen Spannungswandler auf die für von Einplatinencomputer benötigten 5 Volt heruntergewandelt. Der gesamte Aufbau der Stromversorgung ist im Anhang auf Seite \pageref*{fig:power-supply-complete} \, zu erkennen.\\
+Eine weitere Grundvorraussetzung für leichten und schnellen Zugriff auf den Varroabekämpfungsmechanismus war eine WLAN-Verbindung im Garten. Besonders für den Entwicklungsprozess ist es wichtig, ohne physische Verbindung auf das Board zugreifen zu können. Auf diese Weise konnten wir per SSH-Verbindung auf den Einplatinencomputer zugreifen. SSH, kurz für ,,Secure Shell'', ist ein kryptographisches Protokoll durch das Entwickler Zugang zu Kommandozeilen von entfernten Servern oder Computern erhalten \bibRef{ssh}.\\
 Wir konnten Programme starten, die Ergebnisse einsehen und sogar die Software ändern, während unser Prototyp an einem Bienenstock angebracht war. Dadurch konnten wir unseren Entwicklungsprozess weiter vereinfachen.
 % \begin{center}
 % \begin{tabular}{p{.4\textwidth} |>{\centering\arraybackslash} m{.4\textwidth}}
@@ -243,12 +243,12 @@ Wir konnten Programme starten, die Ergebnisse einsehen und sogar die Software ä
 % \end{center}
 
 \subsection{Bau und Verbesserung der Prototypen}
-Bereits im Herbst 2020 haben wir mit dem Bau erster Prototypen begonnen. Unser Ziel dabei war, Fehlerquellen schnell ausfündig zu machen. Wären die Bienen beispielsweise von der Technik oder dem Vorbau am Bienenstockeingang generell gestört wären, hätten wir dieses grundsätzliche Problem bereits frühzeitig entdeckt. Um den Aufwand für diese Tests gering zu halten, überwachten wir mit den Modellen voerst nur einen kleinen Teil des Flugbretts (siehe Anhang Seite ???).\\
+Bereits im Herbst 2020 haben wir mit dem Bau erster Prototypen begonnen. Unser Ziel dabei war, Fehlerquellen schnell ausfündig zu machen. Wären die Bienen beispielsweise von der Technik oder dem Vorbau am Bienenstockeingang generell gestört wären, hätten wir dieses grundsätzliche Problem bereits frühzeitig entdeckt. Um den Aufwand für diese Tests gering zu halten, überwachten wir mit den Modellen voerst nur einen kleinen Teil des Flugbretts (siehe Anhang Seite \pageref*{fig:first-generation-1} \,).
 Im späten Herbst wird der Bienenstockeingang vom Imker sowieso auf ein kleines Flugloch verkleinert, um ein Volk vor Wespen oder auch anderen, räubernden Bienen zu schützen \bibRef{flugloch}. Insofern benötigten wir anfangs gar keine Überwachung des gesamten Flugbretts.\\
 Auch die in diesen Protoypen verbaute Rechentechnik war noch nicht an unsere speziellen Anforderungen angepasst. Für Datenbeschaffung und -verarbeitung verwendeten wir ein Raspberry Pi. Das ist Einplatinencomputer, der besonders in der Maker-Community äußerst beliebt ist. Als Kamera haben wir das von der Raspberry Pi Foundation herausgegebene, zugehörige Kameramodul ,,Raspberry Pi Camera V2'' verbaut. Diese hat eine Auflösung von 8 Megapixel. Der Sensorbereich ist allerdings sehr klein, was sich negativ auf die Bildqualität auswirkt. Außerdem ist das Modul ist beginnerfreundlich und vergleichsweise preiswert.\\
 % Luxacryl als Abtrennung von Kamera zu Bienen
 Für erste Tests war mittlere Bildqualität also ausreichend. Wir wollten schließlich vorerst die Reaktion der Bienen auf angebaute Technik beobachten. Wir kamen zu dem Resultat, dass Bienen nicht generell von einem 3D-gedruckten Anbau gestört sind - jedenfalls nicht von den kleineren Modellen, die wir anfangs entwickelten.\\
-Wie die Kamerabilder, siehe Anhang Seine ???, zeigen, gabe es noch einige Verbesserungsmöglichkeiten. Auch haben wir zu diesem Zeitpunkt noch keine Milben entdecken können. Nächste Schritte waren also, den überwachten Bereich auf das gesamte Flugbrett auszuweiten und die Foto- und Videoqualität zu steigern.\\
+Wie die Kamerabilder, siehe Anhang Seite \pageref*{fig:first-generation-result} \,  zeigen, gabe es noch einige Verbesserungsmöglichkeiten. Auch haben wir zu diesem Zeitpunkt noch keine Milben entdecken können. Nächste Schritte waren also, den überwachten Bereich auf das gesamte Flugbrett auszuweiten und die Foto- und Videoqualität zu steigern.\\
 Das waren die Hauptziele unserer nächsten Prototypen. In einer neuen Generation begannen wir von Grund auf neu. Besonders die Wahl der elektronischen Komponenten überdachten wir in diesem Schritt. Wir ersetzten das Raspberry Pi durch ein für unseren Anwendungszweck passenderes Board, ein Jetson Nano. Dabei handelt es sich um einen für den Preis und den Stromverbrauch sehr leistungsstarken Einplatinencomputer. NVIDIA entwickelte dieses Board speziell für kleinen, energieeffiziente KI-Systeme. Auf dem Board können mehrere Neuonale Netze gleichzeitig ausgeführt und verwaltet werden\bibRef{jetson-nano}.\\
 % 472 Gigaflops
 Außerdem hat das Jetson Nano zwei Anschlüsse für Kameras. Das erleichtert das Auslesen der Kamera wesentlich. Denn ohne native Unterstützung des Minicomputers für mehrere Kameras hätten wir Erweiterungsboards kaufen müssen. Rezensionen zufolge ist das Ansteuern darüber allerdings aufwendig und Datenübertragungsraten werden verschlechtert.\\
@@ -395,7 +395,7 @@ Aus Abbildung \autoref{fig:m2} geht darüber hinaus hervor, dass ab $k = 3$ eine
 \section{Umsetzung der Milbenbekämpfung}
 \subsection{Ideen zum Aufbau}
 
-\subsection{Durchführung erste Versuche mit Lasern}
+\subsection{Durchführung erster Versuche mit Lasern}
 
 % \subsection{Darstellung der Ergebnisse auf einer Website} -> nehmen wir nur ausführlich, falls wir noch Platz füllen müssen
 
@@ -420,15 +420,96 @@ Aus Abbildung \autoref{fig:m2} geht darüber hinaus hervor, dass ab $k = 3$ eine
 \newpage
 \section{Anhang}
 \subsection{Zu Kapitel \autoref{section:Vorbetrachtungen}}
-\begin{figure}[H]
+\begin{figure}[H] \label{fig:technical-sketch}
+    \centering
+    \includegraphics[width=.9\textwidth]{images/technische Skizze 1.jpg}
+    \caption{Technische Skizze einer mechanischen Vorrichtung, die durch Spiegel immer eine Biene fokussiert\\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+
+\begin{figure}[H] \label{fig:mechanics-test}
+    \centering
+    \begin{subfigure}{.49\textwidth}
+        \includegraphics[height=.2\textheight]{images/mechanics_test_1.jpg}
+    \end{subfigure}
+    \begin{subfigure}{.49\textwidth}
+        \includegraphics[height=.2\textheight]{images/mechanics_test_2.jpg}
+    \end{subfigure}
+    \caption{Versuchsaufbau zum Testen eines mechanischen Lösungsansatzes: Der Servo kann die Kamera schwenken \\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+
+\begin{figure}[H]\label{fig:moving-cameras-considerations}
     \centering
     \includegraphics[page=1, scale=.3]{images/TPZ_Cameras_Idea.pdf}
     \includegraphics[page=2, scale=.3]{images/TPZ_Cameras_Idea.pdf}    
     \includegraphics[page=3, scale=.3]{images/TPZ_Cameras_Idea.pdf}    
     \includegraphics[page=4, scale=.3]{images/TPZ_Cameras_Idea.pdf}    
-    \caption{Unsere Abwägungen zu bewegbaren Kameras}
-    \label{fig:moving_cameras_considerations}
+    \caption{Unsere Abwägungen zu bewegbaren Kameras \\
+    \textit{Quelle: Eigenarchiv}}
 \end{figure}
+
+\begin{figure}[H] \label{fig:bee-vision}
+    \centering
+    \includegraphics[width=.9\textwidth]{images/bee_vision.png}
+    \caption{Der von Bienen sichtbare Bereich des Lichtspektrums \\
+    \textit{Quelle: \url{https://www.beeculture.com/bees-see-matters/}}}
+\end{figure}
+
+\subsection{Zu Kapitel \autoref{section:Prototypen}}
+\begin{figure}[H] \label{fig:power-supply-complete}
+    \centering
+    \includegraphics[width=.9\textwidth]{images/power_supply.jpg}
+    \caption{Die Stromversorgung für unsere Prototypen \\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+
+\begin{figure}[H] \label{fig:first-generation-1}
+    \centering
+    \includegraphics[width=.8\textwidth]{images/first_prototype_on_hive.jpg}
+    \caption{Erster Prototyp über beim Überwachen des verkleinerten Fluglochs \\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+\begin{figure}[H] \label{fig:first-generation-2}
+    \centering
+    \includegraphics[width=.8\textwidth]{images/first_prototype_birds_eye_view.jpg}
+    \caption{Gesamtaufbau des ersten Versuchs \\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+\begin{figure}[H] \label{fig:first-generation-3}
+    \centering
+    \includegraphics[width=.8\textwidth]{images/second_prototype.jpg}
+    \caption{Technischer Aufbau einer verbesserten Version des ersten Tests \\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+
+\begin{figure}[H] \label{fig:first-generation-result}
+    \centering
+    \includegraphics[width=.8\textwidth]{images/results_first_prototype.png}
+    \caption{Vom ersten Prototypen aufgenommes Bild\\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+
+\begin{figure}[H] \label{fig:second-generation-production}
+    \centering
+    \includegraphics[width=.8\textwidth]{images/Gruppe Semi.jpg}
+    \caption{Bau der zweiten Generation an Prototypen\\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+
+\begin{figure}[H] \label{fig:second-generation-on-hive}
+    \centering
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=.8\textwidth]{images/second-prototype-on-beehive.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=.8\textwidth]{images/second-prototype-problem.jpg}
+    \end{subfigure}
+    \caption{Problem beim Anbei der zweiten Generation: Bienen finden den Eingang nicht\\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+
 
 \subsection{Zu Kapitel \autoref{section:Programmierung}}
 \begin{figure}[!htb] \label{annotated1}
@@ -515,10 +596,16 @@ Aus Abbildung \autoref{fig:m2} geht darüber hinaus hervor, dass ab $k = 3$ eine
     letzter zugriff: 18.12.2021
 
 \bibitem{nvidia.com} \bibLabel{jetson-nano}
-    \textsc{Autor Unbekannt}M
+    \textsc{Autor Unbekannt};
     \textit{NVIDIA Jetson Nano}\\
     \url{https://www.nvidia.com/de-de/autonomous-machines/embedded-systems/jetson-nano/}\\
     letzter Zugriff: 18.12.2021
+
+\bibitem{businessinsider.de} \bibLabel{protoyping}
+    \textsc{Autor Unbekannt};
+    \textit{Prototyping}\\
+    \url{https://www.businessinsider.de/gruenderszene/lexikon/begriffe/prototyping/}\\
+    letzter Zugriff: 19.12.2021
 
 \end{thebibliography}
 
