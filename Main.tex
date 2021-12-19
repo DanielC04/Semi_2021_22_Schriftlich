@@ -254,16 +254,16 @@ Das waren die Hauptziele unserer nächsten Prototypen. In einer neuen Generation
 Außerdem hat das Jetson Nano zwei Anschlüsse für Kameras. Das erleichtert das Auslesen der Kamera wesentlich. Denn ohne native Unterstützung des Minicomputers für mehrere Kameras hätten wir Erweiterungsboards kaufen müssen. Rezensionen zufolge ist das Ansteuern darüber allerdings aufwendig und Datenübertragungsraten werden verschlechtert.\\
 % Kameras
 % Beleuchtung
-Anstatt einen kleinen Überbau auf das Flugbrett zu setzen, entschieden wir uns dieses ganz durch einen eigenen Vorbau zu ersetzen. So konnten wir die Maße, Oberflächenbeschaffenheit und Farbe des Flugbretts leichter bestimmen. Zudem ermöglichte diese Herangehensweise einen modularen Aufbau unseres Systems: Durch eine Steckverbindung kann unser Vorbau schnell an beziehungsweise von der Beute abgebaut werden. Im Anhang auf Seite ??? ist zu sehen, wie wir den Steckmechanismus umgesetzt haben.\\
+Anstatt einen kleinen Überbau auf das Flugbrett zu setzen, entschieden wir uns dieses ganz durch einen eigenen Vorbau zu ersetzen. So konnten wir die Maße, Oberflächenbeschaffenheit und Farbe des Flugbretts leichter bestimmen. Zudem ermöglichte diese Herangehensweise einen modularen Aufbau unseres Systems: Durch eine Steckverbindung kann unser Vorbau schnell an beziehungsweise von der Beute abgebaut werden.\\
 Diesen Mechanismus und weitere Eckverbindungen druckten wir mit unserem 3D-Drucker. Die Seitenwände sägten wir dagegen aus Sperrholz, um eine übermäßig lange Druckzeit zu vermeiden und Filament zu sparen.
 % Bild für bessere, strukturiertere Beschreibung
 Bei den Praxistests zeigten sich schnell die Schwachstellen unseres Designs:\\
-Ein riesiges Problem war, dass die Bienen das Flugloch nicht mehr zuverlässig fanden. Aufgrund des langen Vorbaus suchten sie Abkürzungen und versuchten, unsere Konstruktion zu umgehen. Auch landeten sie auf dem Dach unseres Prototypen. Aufgrund der Ähnlichkeiten zu einem Flugbrett haben die Bienen dieses offenbar mit dem Eingang verwechselt. Weiterhin wurden die Bienen von schwarzem Isolierband, das wir verbaut hatten, irritiert. Vermutlich haben sie auch dieses, wegen der schwarzen Farbe und der rechteckigen Form, für einen Eingang zum Bienenstock gehalten. Zum Zeitpunkt unsers Tests flogen, im Gegensatz zu unseren ersten Versuchen, einige Bienen. Nach kurzer Zeit hatte sich eine Bienentraube am Bienenstock angestaut (siehe Anhang Seite ???). Deshalb mussten wir den Versuch vorzeitig abbrechen.\\
+Ein riesiges Problem war, dass die Bienen das Flugloch nicht mehr zuverlässig fanden. Aufgrund des langen Vorbaus suchten sie Abkürzungen und versuchten, unsere Konstruktion zu umgehen. Auch landeten sie auf dem Dach unseres Prototypen. Aufgrund der Ähnlichkeiten zu einem Flugbrett haben die Bienen dieses offenbar mit dem Eingang verwechselt. Weiterhin wurden die Bienen von schwarzem Isolierband, das wir verbaut hatten, irritiert. Vermutlich haben sie auch dieses, wegen der schwarzen Farbe und der rechteckigen Form, für einen Eingang zum Bienenstock gehalten. Zum Zeitpunkt unsers Tests flogen, im Gegensatz zu unseren ersten Versuchen, einige Bienen. Nach kurzer Zeit hatte sich eine Bienentraube am Bienenstock angestaut (siehe Anhang Seite \pageref*{fig:second-generation-on-hive} \, ). Deshalb mussten wir den Versuch vorzeitig abbrechen.\\
 Beim Abbauen wurde darüber hinaus ersichtlich, dass einige wenige Bienen in den abgeschlossenen Raum, zur Elektronik krabbeln konnten. Wir hatten beim Bau des zweiten Protoypen die Rückwand nicht durch eine zusätzliche Sperrholzplatte abgedeckt. Der Bienenkasten sollte planweise dicht mit der Rückwand an der Beute anliegen und somit alle Bienen abhalten. Wir haben die Agilität der Bienen stark unterschätzt.\\
 Ein weiteres Problem zeigte sich bei späteren Tests dieses Prototypen. Das Plexiglas, das die Bienen von der Elektronik trennt, wirkte sich negativ auf die Bildqualität aus. Zum einen gab es Reflexionen, die durch teilweises Zurückwerfen der Beleuchtung verursacht wurden. Zum anderen sammelte sich Morgentau auf der Platte und verdeckte Teile der Sicht. Erst im Laufe des Tages verdunstete das Wasser wieder.
 
 All diese Probleme versuchten wir in einem dritten Prototyp zu lösen. Wichtig, damit der Vorbau von den Bienen angenommen wird, war die vorgebaute, zusätzliche Länge des Flugebretts zu minimieren. Durch ein kompakteres Design konnten wir diese Länge von 22cm auf 8cm reduzieren. Die Benutzung von schwarzem Isolierband vermieden wir hier komplett. Zudem war bei dieser Version eine Rückwand vorgesehen, sodass die Elektronik vollständig von den Bienen geschützt ist.\\
-Den Tau und die Reflexionen konnten wir loswerden, indem wir die Plexiglasscheibe wegließen. Stattdessen ragen dei Objektive der Kameras direkt in den für Bienen zugänglichen Bereich (siehe Anhang Seite ???). Ursprünglich sollte diese Option nur eine Notlösung darstellen. Praxiserfahrengen zeigten aber, dass Bienen nur äußerst selten im beängten Raum des Vorbaus fliegen.\\
+Den Tau und die Reflexionen konnten wir loswerden, indem wir die Plexiglasscheibe wegließen. Stattdessen ragen die Objektive der Kameras direkt in den für Bienen zugänglichen Bereich (siehe Anhang Seite ???). Ursprünglich sollte diese Option nur eine Notlösung darstellen. Praxiserfahrengen zeigten aber, dass Bienen nur äußerst selten im beängten Raum des Vorbaus fliegen.\\
 Mit diesen Änderungen konnten wir also alle großen Mängel beheben. Der neue Prototyp wurde von den Bienen ohne weitere Probleme angenommen. Unter \url{https://semi.dcermann.de/project} ist das auf einem Video gut zu erkennen. Jetzt konnten wir auch umfangreichere Daten für das Erstellen und Trainieren eines trainingsbasierten Milbenerkennungsalgorithmus sammeln. Dafür filmten wir über eine Woche verteilt zu unterschiedlichen Tageszeiten das Flugbrett. Insgesamt speicherten wir über 40GB Bild- und Videomaterial.\\
 % weitere Verbesserungsmöglichkeiten: Bildqualität; mehr Winkel
 
@@ -510,6 +510,32 @@ Aus Abbildung \autoref{fig:m2} geht darüber hinaus hervor, dass ab $k = 3$ eine
     \textit{Quelle: Eigenarchiv}}
 \end{figure}
 
+\begin{figure}[H] \label{fig:third-generation-setup}
+    \centering
+    \includegraphics[width=.9\textwidth]{images/third-prototype-electronics-2.jpg}
+    \caption{Trennung der Technik von den Bienen in der dritten Generation unserer Prototypen\\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+
+\begin{figure}[H] \label{fig:third-generation-electronics}
+    \centering
+    \includegraphics[width=.9\textwidth]{images/third-prototype-electronics-1.jpg}
+    \caption{Die Elektronik des dritten Prototyps \\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
+
+\begin{figure}[H] \label{fig:third-generation-on-hive}
+    \centering
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=.8\textwidth]{images/thirdPrototype1.jpg}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=.8\textwidth]{images/thirdPrototype2.jpg}
+    \end{subfigure}
+    \caption{Der Dritte Prototyp während der Langzeittests \\
+    \textit{Quelle: Eigenarchiv}}
+\end{figure}
 
 \subsection{Zu Kapitel \autoref{section:Programmierung}}
 \begin{figure}[!htb] \label{annotated1}
